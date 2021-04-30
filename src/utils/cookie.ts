@@ -1,8 +1,8 @@
 const DOT = '.'
-
+const defaultDomain = '.pippi.finance'
 const getSubDomain = () => {
   const { hostname } = window.location
-  const domains = hostname.split(DOT)
+  const domains = hostname.split('.')
   if (domains.length > 2) {
     return domains.reduce((pre, cur, index) => {
       if (index === 0) {
@@ -11,7 +11,7 @@ const getSubDomain = () => {
       if (index === 1) {
         return cur
       }
-      return `${pre}${DOT}${cur}`
+      return `${pre}.${cur}`
     })
   }
 
@@ -26,7 +26,7 @@ const setCookie = (name, value, days = 365, shouldUseSubDomain = false) => {
     date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000)
     expires = `; expires=${date.toUTCString()}`
   }
-  const domain = shouldUseSubDomain ? `; domain=${getSubDomain()}` : ''
+  const domain = shouldUseSubDomain ? `; domain=${defaultDomain}` : ''
   document.cookie = `${name}=${value}${expires}${domain}; path=/`
 }
 
