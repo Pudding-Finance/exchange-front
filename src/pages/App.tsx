@@ -26,8 +26,7 @@ import { EN } from '../constants/localisation/languageCodes'
 import { LanguageContext } from '../hooks/LanguageContext'
 import { TranslationsContext } from '../hooks/TranslationsContext'
 import { allLanguages } from '../constants/localisation/languageCodes'
-// import backimg from '../assets/images/bg.png'
-// import LogoH from '../assets/images/logoh.png'
+import cookie from '../utils/cookie'
 
 const AppWrapper = styled.div`
   display: flex;
@@ -96,7 +95,7 @@ export default function App() {
 
   useEffect(() => {
     setSelectedLanguage(EN)
-    const storedLangCode = localStorage.getItem('pipipSwapLanguage')
+    const storedLangCode = cookie.getCookie('pipipSwapLanguage')
     if (storedLangCode) {
       const storedLang = getStoredLang(storedLangCode)
       setSelectedLanguage(storedLang)
@@ -121,7 +120,10 @@ export default function App() {
         console.error(error)
       })
   }
-
+  const handleSetSelectedLanguage = obj => {
+    setSelectedLanguage(obj)
+    cookie.setCookie('pipipSwapLanguage', obj.code)
+  }
   useEffect(() => {
     if (selectedLanguage) {
       fetchTranslationsForSelectedLanguage()
@@ -135,7 +137,7 @@ export default function App() {
         <Route component={GoogleAnalyticsReporter} />
         <AppWrapper>
           <LanguageContext.Provider
-            value={{ selectedLanguage, setSelectedLanguage, translatedLanguage, setTranslatedLanguage }}
+            value={{ selectedLanguage, handleSetSelectedLanguage, translatedLanguage, setTranslatedLanguage }}
           >
             <TranslationsContext.Provider value={{ translations, setTranslations }}>
               <HeaderWrapper>

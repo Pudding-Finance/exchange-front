@@ -6,14 +6,14 @@ export interface LanguageObject {
 }
 interface LanguageState {
   selectedLanguage: LanguageObject
-  setSelectedLanguage: React.Dispatch<React.SetStateAction<LanguageObject>>
+  handleSetSelectedLanguage: React.Dispatch<React.SetStateAction<LanguageObject>>
   translatedLanguage: LanguageObject
   setTranslatedLanguage: React.Dispatch<React.SetStateAction<LanguageObject>>
 }
 
 const defaultLanguageState: LanguageState = {
   selectedLanguage: { code: '', language: '' },
-  setSelectedLanguage: (): void => {},
+  handleSetSelectedLanguage: (): void => {},
   translatedLanguage: { code: '', language: '' },
   setTranslatedLanguage: (): void => {}
 }

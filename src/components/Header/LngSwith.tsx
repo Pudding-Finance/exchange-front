@@ -7,13 +7,13 @@ interface MobileMenuProps {
   className?: string
 }
 const AccountLink: React.FC<MobileMenuProps> = (props) => {
-  const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
+  const { selectedLanguage, handleSetSelectedLanguage } = useContext(LanguageContext)
   return (
     <StyledButton>
       <Button
         className={(selectedLanguage && selectedLanguage.code === EN.code) || !selectedLanguage ? 'active' : 'unactive'}
         onClick={() => {
-          setSelectedLanguage(EN)
+          handleSetSelectedLanguage(EN)
         }}
       >
         {EN.language}
@@ -22,7 +22,7 @@ const AccountLink: React.FC<MobileMenuProps> = (props) => {
       <Button
         className={selectedLanguage && selectedLanguage.code === ZHCN.code ? 'active' : 'unactive'}
         onClick={() => {
-          setSelectedLanguage(ZHCN)
+          handleSetSelectedLanguage(ZHCN)
         }}
       >
         {ZHCN.language}
