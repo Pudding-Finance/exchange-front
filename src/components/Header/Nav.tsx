@@ -23,10 +23,10 @@ const Nav: React.FC = () => {
       <StyledAbsoluteLink href="https://app.pippi.finance/ido">
         <TranslatedText translationId={264}>IDO</TranslatedText>
       </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://info.pippi.finance">
+      <StyledAbsoluteLink href="https://info.pippi.finance" target="_blank">
         <TranslatedText translationId={262}>Analytics</TranslatedText>
       </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://voting.pippi.finance">
+      <StyledAbsoluteLink href="https://voting.pippi.finance" target="_blank">
         <TranslatedText translationId={284}>Voting</TranslatedText>
       </StyledAbsoluteLink>
     </StyledNav>

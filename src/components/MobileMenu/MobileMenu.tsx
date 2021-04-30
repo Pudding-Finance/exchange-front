@@ -63,12 +63,12 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onDismiss, visible }) => {
             </StyledAbsoluteLink>
           </Cn>
           <Cn>
-            <StyledAbsoluteLink href="https://info.pippi.finance">
+            <StyledAbsoluteLink href="https://info.pippi.finance" target="_blank">
               <TranslatedText translationId={262}>Analytics</TranslatedText>
             </StyledAbsoluteLink>
           </Cn>
           <Cn>
-            <StyledAbsoluteLink href="https://voting.pippi.finance">
+            <StyledAbsoluteLink href="https://voting.pippi.finance" target="_blank">
               <TranslatedText translationId={284}>Voting</TranslatedText>
             </StyledAbsoluteLink>
           </Cn>
