@@ -48,11 +48,6 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onDismiss, visible }) => {
             </StyledLink>
           </Cn>
           <Cn>
-            <StyledAbsoluteLink href="https://app.pippi.finance/airdrop">
-              <TranslatedText translationId={230}>airDrop</TranslatedText>
-            </StyledAbsoluteLink>
-          </Cn>
-          <Cn>
             <StyledAbsoluteLink href="https://app.pippi.finance/nft">
               <TranslatedText translationId={258}>NFT</TranslatedText>
             </StyledAbsoluteLink>
