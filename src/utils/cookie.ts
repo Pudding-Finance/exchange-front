@@ -1,21 +1,21 @@
 const defaultDomain = '.puddingswap.finance'
-const getSubDomain = () => {
-  const { hostname } = window.location
-  const domains = hostname.split('.')
-  if (domains.length > 2) {
-    return domains.reduce((pre, cur, index) => {
-      if (index === 0) {
-        return ''
-      }
-      if (index === 1) {
-        return cur
-      }
-      return `${pre}.${cur}`
-    })
-  }
+// const getSubDomain = () => {
+//   const { hostname } = window.location
+//   const domains = hostname.split('.')
+//   if (domains.length > 2) {
+//     return domains.reduce((pre, cur, index) => {
+//       if (index === 0) {
+//         return ''
+//       }
+//       if (index === 1) {
+//         return cur
+//       }
+//       return `${pre}.${cur}`
+//     })
+//   }
 
-  return hostname
-}
+//   return hostname
+// }
 
 const setCookie = (name, value, days = 365, shouldUseSubDomain = false) => {
   const date = new Date()
