@@ -5,29 +5,17 @@ import TranslatedText from '../TranslatedText'
 const Nav: React.FC = () => {
   return (
     <StyledNav>
-      <StyledAbsoluteLink href="https://app.pippi.finance/farms">
+      <StyledAbsoluteLink href="https://test.puddingswap.finance/farms">
         <TranslatedText translationId={112}>Farm</TranslatedText>
       </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://app.pippi.finance/staking">
+      <StyledAbsoluteLink href="https://test.puddingswap.finance/staking">
         <TranslatedText translationId={114}>Staking</TranslatedText>
       </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://app.pippi.finance/xpipi">
-        <TranslatedText translationId={132}>xPIPI Pools</TranslatedText>
+      <StyledAbsoluteLink href="https://test.puddingswap.finance/xpipi">
+        <TranslatedText translationId={132}>ePUD Pools</TranslatedText>
       </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://swap.pippi.finance/" className="active">
+      <StyledAbsoluteLink href="https://swap.puddingswap.finance/" className="active">
         <TranslatedText translationId={116}>Exchange</TranslatedText>
-      </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://app.pippi.finance/nft">
-        <TranslatedText translationId={258}>NFT</TranslatedText>
-      </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://app.pippi.finance/ido">
-        <TranslatedText translationId={264}>IDO</TranslatedText>
-      </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://info.pippi.finance" target="_blank">
-        <TranslatedText translationId={262}>Analytics</TranslatedText>
-      </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://voting.pippi.finance" target="_blank">
-        <TranslatedText translationId={284}>Voting</TranslatedText>
       </StyledAbsoluteLink>
     </StyledNav>
   )
