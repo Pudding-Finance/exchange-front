@@ -1,5 +1,4 @@
-const DOT = '.'
-const defaultDomain = '.pippi.finance'
+const defaultDomain = '.puddingswap.finance'
 const getSubDomain = () => {
   const { hostname } = window.location
   const domains = hostname.split('.')
