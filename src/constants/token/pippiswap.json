@@ -11,20 +11,12 @@
   "keywords": ["puddingswap", "default"],
   "tokens": [
     {
-      "name": "ETH",
-      "symbol": "ETH",
-      "address": "0x64ff637fb478863b7468bc97d30a5bf3a428a1fd",
-      "chainId": 170,
-      "decimals": 18,
-      "logoURI": "https://swap.puddingswap.finance/images/coins/0x64ff637fb478863b7468bc97d30a5bf3a428a1fd.png"
-    },
-    {
       "name": "PuddingSwap Token",
-      "symbol": "PIPI",
-      "address": "0xaaae746b5e55d14398879312660e9fde07fbc1dc",
+      "symbol": "PUD",
+      "address": "0x96D808A323d9eB1De23F7d82F83574e6969c5591",
       "chainId": 170,
       "decimals": 18,
-      "logoURI": "https://swap.puddingswap.finance/images/coins/0xaaae746b5e55d14398879312660e9fde07fbc1dc.png"
+      "logoURI": "https://swap.puddingswap.finance/images/coins/0x96D808A323d9eB1De23F7d82F83574e6969c5591.png"
     }
   ]
 }

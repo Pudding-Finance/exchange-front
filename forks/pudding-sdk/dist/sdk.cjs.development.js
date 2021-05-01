@@ -20,7 +20,7 @@ var IPancakePair = _interopDefault(require('@pancakeswap-libs/pancake-swap-core/
 var _SOLIDITY_TYPE_MAXIMA;
 
 (function (ChainId) {
-  ChainId[ChainId["MAINNET"] = 128] = "MAINNET";
+  ChainId[ChainId["MAINNET"] = 170] = "MAINNET";
   ChainId[ChainId["TESTNET"] = 256] = "TESTNET";
 })(exports.ChainId || (exports.ChainId = {}));
 
@@ -35,7 +35,7 @@ var _SOLIDITY_TYPE_MAXIMA;
   Rounding[Rounding["ROUND_UP"] = 2] = "ROUND_UP";
 })(exports.Rounding || (exports.Rounding = {}));
 
-var FACTORY_ADDRESS = '0x979efE7cA072b72d6388f415d042951dDF13036e';
+var FACTORY_ADDRESS = '0x34b213d17d104099D50707C2fCDF1bD3325a80B2';
 var INIT_CODE_HASH = '0xd805d4c8a7fb3567167020352386905de5d4bd188fe2284675e3ed584653df75';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
@@ -369,7 +369,7 @@ function Currency(decimals, symbol, name) {
  * The only instance of the base class `Currency`.
  */
 
-Currency.ETHER = /*#__PURE__*/new Currency(18, 'HT', 'HUOBI');
+Currency.ETHER = /*#__PURE__*/new Currency(18, 'HOO', 'Hoo');
 var ETHER = Currency.ETHER;
 
 var _WETH;

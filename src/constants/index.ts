@@ -4,16 +4,16 @@ import { AbstractConnector } from '@web3-react/abstract-connector'
 // import { bsc, fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
 import { injected } from '../connectors'
 // TODO
-export const ROUTER_ADDRESS = '0xBe4AB2603140F134869cb32aB4BC56d762Ae900B'
+export const ROUTER_ADDRESS = '0x03fF6895aB1Fdff998665E34368B69a032F50578'
 
 // a list of tokens by chain
 type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const HUSD = new Token(ChainId.MAINNET, '0x0298c2b32eae4da002a15f36fdf7615bea3da047', 8, 'HUSD', 'Heco-Peg HUSD Token')
-export const USDT = new Token(ChainId.MAINNET, '0xa71edc38d189767582c38a3145b5873052c3e47a', 18, 'USDT', 'Heco-Peg USDTHECO Token')
-export const ETH = new Token(ChainId.MAINNET, '0x64ff637fb478863b7468bc97d30a5bf3a428a1fd', 18, 'ETH', 'Heco-Peg ETH Token')
+export const HUSD = new Token(ChainId.MAINNET, '0x4EcB3de142bA94f54d2E553F82B42523eec18FB6', 8, 'HUSD', 'Heco-Peg HUSD Token')
+export const USDT = new Token(ChainId.MAINNET, '0x5c325448a58CE02624c68B25D841496e65dDc1D6', 18, 'USDT', 'Heco-Peg USDTHECO Token')
+export const ETH = new Token(ChainId.MAINNET, '0xffB7F4F03F999dCc9C44cb8EED028C1f559cabC3', 18, 'ETH', 'Heco-Peg ETH Token')
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
@@ -51,8 +51,8 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
     [
-      new Token(ChainId.MAINNET, '0xaaae746b5e55d14398879312660e9fde07fbc1dc', 18, 'PIPI', 'PIPI SHRIMP Token'),
-      new Token(ChainId.MAINNET, '0x5545153ccfca01fbd7dd11c0b23ba694d9509a6f', 18, 'WHT', 'Wrapped HT')
+      new Token(ChainId.MAINNET, '0x96D808A323d9eB1De23F7d82F83574e6969c5591', 18, 'PUD', 'PuddingSwap Token'),
+      new Token(ChainId.MAINNET, '0xffB7F4F03F999dCc9C44cb8EED028C1f559cabC3', 18, 'WHOO', 'Wrapped HOO')
     ],
     [HUSD, USDT]
   ]
