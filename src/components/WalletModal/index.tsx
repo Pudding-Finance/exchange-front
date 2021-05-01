@@ -285,7 +285,7 @@ export default function WalletModal({
           <ContentWrapper>
             {error instanceof UnsupportedChainIdError ? (
               <h5>
-                Please connect to heco Chain network.
+                Please connect to Hoo Chain network.
               </h5>
             ) : (
               'Error connecting. Try refreshing the page.'
