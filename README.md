@@ -1,11 +1,11 @@
 
 ## Intro
 
-[Pippi Finance](https://pippi.finance/) is an automated market maker (“**AMM**”) that allows two tokens to be exchanged on the [Heco Chain](https://docs.hecochain.com/#/mainnet) (HECO). It is fast, cheap, and allows anyone to participate.
+[PuddingSwap Finance](https://puddingswwap.finance/) is an automated market maker (“**AMM**”) that allows two tokens to be exchanged on the [Hoo Chain](https://docs.hoosmartchain.com/) (HSC). It is fast, cheap, and allows anyone to participate.
 
 ##
 
-This repo is responsible for the **exchange/pool** interfaace of the AMM: [swap.pippi.finance](https://swap.pippi.finance/)
+This repo is responsible for the **exchange/pool** interfaace of the AMM: [exchange.puddingswap.finance](https://exchange.pippi.finance/)
 
 ## Run locally
 
