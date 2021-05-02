@@ -6,16 +6,16 @@ const Nav: React.FC = () => {
   return (
     <StyledNav>
       <StyledAbsoluteLink href="https://puddingswap.finance/farms">
-        <TranslatedText translationId={112}>Farm</TranslatedText>
+        <TranslatedText translationId={198}>Farm</TranslatedText>
       </StyledAbsoluteLink>
       <StyledAbsoluteLink href="https://puddingswap.finance/staking">
-        <TranslatedText translationId={114}>Staking</TranslatedText>
+        <TranslatedText translationId={200}>Staking</TranslatedText>
       </StyledAbsoluteLink>
       <StyledAbsoluteLink href="https://puddingswap.finance/ePud">
-        <TranslatedText translationId={132}>ePUD Pools</TranslatedText>
+        <TranslatedText translationId={218}>ePUD Pools</TranslatedText>
       </StyledAbsoluteLink>
       <StyledAbsoluteLink href="https://swap.puddingswap.finance/" className="active">
-        <TranslatedText translationId={116}>Exchange</TranslatedText>
+        <TranslatedText translationId={202}>Exchange</TranslatedText>
       </StyledAbsoluteLink>
     </StyledNav>
   )

@@ -100,7 +100,7 @@ export default function Menu() {
             <Info size={14} />
             About
           </MenuItem>
-          <MenuItem id="link" href="https://docs.pippi.finance">
+          <MenuItem id="link" href="https://docs.puddingswap.finance">
             <BookOpen size={14} />
             <TranslatedText translationId={120}>Docs</TranslatedText>
           </MenuItem>
@@ -108,7 +108,7 @@ export default function Menu() {
             <Code size={14} />
             Code
           </MenuItem>
-          <MenuItem id="link" href="https://t.me/pippishrmp_swap">
+          <MenuItem id="link" href="https://t.me/puddingswap">
             <MessageCircle size={14} />
             <TranslatedText translationId={124}>Telegram</TranslatedText>
           </MenuItem>
