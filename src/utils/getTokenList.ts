@@ -7,7 +7,7 @@ import uriToHttp from './uriToHttp'
 
 // bakeryswap defaultTokenJson
 import { DEFAULT_TOKEN_LIST_URL } from '../constants/lists'
-import defaultTokenJson from '../constants/token/pippiswap.json'
+import defaultTokenJson from '../constants/token/puddingswap.json'
 
 const tokenListValidator = new Ajv({ allErrors: true }).compile(schema)
 

@@ -12,7 +12,7 @@ If you are seeking to be added to the [exchange.puddingswap.finance](https://exc
 1. Fork the [Pudding Exchange Interface](https://github.com/Pudding-Finance/exchange-front) repository on GitHub
 2. Upload your **logo** in a 96*96px transparent .png format to the `/public/images/coins` directory. Please name the logo as your symbol in uppercase.
 
-3. Add your **token information** using the example format provided below to `pippiswap.json` in the `/src/constants/token/` directory.
+3. Add your **token information** using the example format provided below to `puddingswap.json` in the `/src/constants/token/` directory.
 
 4. Create a **pull request** detailing information about your project, website address, and contact details (telegram)
 
