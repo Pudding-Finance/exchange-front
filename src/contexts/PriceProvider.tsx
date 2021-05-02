@@ -1,9 +1,10 @@
-import React, { createContext, useState } from 'react'
-// import BigNumber from 'bignumber.js'
-// import multicall from '../utils/multicall'
-// import erc20 from '../constants/abis/erc20.json'
-// import { getBalanceNumber } from '../utils/formatBalance'
-// import { useBlock } from '../hooks/useBlock'
+ /* eslint-disable */ 
+import React, { createContext, useEffect, useState, useCallback } from 'react'
+import BigNumber from 'bignumber.js'
+import multicall from '../utils/multicall'
+import erc20 from '../constants/abis/erc20.json'
+import { getBalanceNumber } from '../utils/formatBalance'
+import { useBlock } from '../hooks/useBlock'
 
 export interface PriceContext {
   htPrice: number
@@ -16,7 +17,7 @@ export const Context = createContext<PriceContext>({
 })
 
 const PriceProvider: React.FC = ({ children }) => {
-  // const block = useBlock()
+  const block = useBlock()
   const [price, setPrice] = useState({
     htPrice: 0,
     pippiPrice: 0
