@@ -65,7 +65,7 @@ export default function Pool() {
         <AutoColumn gap="lg" justify="center">
           <ButtonPrimary id="join-pool-button" as={Link} style={{ padding: 16 }} to="/add/ETH">
             <Text fontWeight={500} fontSize={20}>
-              <TranslatedText translationId={202}>Add Liquidity</TranslatedText>
+              <TranslatedText translationId={288}>Add Liquidity</TranslatedText>
             </Text>
           </ButtonPrimary>
 
@@ -76,7 +76,7 @@ export default function Pool() {
               </Text>
               <Question
                 text={TranslateString(
-                  216,
+                  302,
                   'When you add liquidity, you are given pool tokens that represent your share. If you don’t see a pool you joined in this list, try importing a pool below.'
                 )}
               />
@@ -103,7 +103,7 @@ export default function Pool() {
             ) : (
               <LightCard padding="40px">
                 <TYPE.body color={theme.colors.text3} textAlign="center">
-                  <TranslatedText translationId={206}>No liquidity found.</TranslatedText>
+                  <TranslatedText translationId={292}>No liquidity found.</TranslatedText>
                 </TYPE.body>
               </LightCard>
             )}
@@ -112,7 +112,7 @@ export default function Pool() {
               <Text textAlign="center" fontSize={14} style={{ padding: '.5rem 0 .5rem 0' }}>
                 {hasV1Liquidity ? 'Uniswap V1 liquidity found!' : TranslateString(218, "Don't see a pool you joined?")}{' '}
                 <StyledInternalLink id="import-pool-link" to={hasV1Liquidity ? '/migrate/v1' : '/find'}>
-                  {hasV1Liquidity ? 'Migrate now.' : TranslateString(220, 'Import it.')}
+                  {hasV1Liquidity ? 'Migrate now.' : TranslateString(306, 'Import it.')}
                 </StyledInternalLink>
               </Text>
             </div>
