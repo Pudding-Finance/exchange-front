@@ -110,7 +110,7 @@ export default function Pool() {
 
             <div>
               <Text textAlign="center" fontSize={14} style={{ padding: '.5rem 0 .5rem 0' }}>
-                {hasV1Liquidity ? 'Uniswap V1 liquidity found!' : TranslateString(218, "Don't see a pool you joined?")}{' '}
+                {hasV1Liquidity ? 'Uniswap V1 liquidity found!' : TranslateString(304, "Don't see a pool you joined?")}{' '}
                 <StyledInternalLink id="import-pool-link" to={hasV1Liquidity ? '/migrate/v1' : '/find'}>
                   {hasV1Liquidity ? 'Migrate now.' : TranslateString(306, 'Import it.')}
                 </StyledInternalLink>
