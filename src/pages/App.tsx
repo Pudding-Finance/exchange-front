@@ -143,8 +143,8 @@ export default function App() {
             <TranslationsContext.Provider value={{ translations, setTranslations }}>
               <HeaderWrapper>
                 <Header />
-                <CountDown />
               </HeaderWrapper>
+              <CountDown />
               <BodyWrapper>
                 <Popups />
                 <Web3ReactManager>

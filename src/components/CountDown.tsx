@@ -6,17 +6,26 @@ import styled from 'styled-components'
 const Container = styled.div`
   margin-top: 60px;
   width: 100%;
+  max-width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: ${props => props.theme.colors.primary};
   height: 76px;
   color: ${props => props.theme.colors.white};
+  @media (max-width: 500px) {
+    margin-top: 0px;
+  }
 `
 
 const Title = styled.div`
   font-size: 18px;
   margin-right: 50px;
+  @media (max-width: 500px) {
+    margin-right: 20px;
+  }
 `
 
 const TimeItem = styled.div`
