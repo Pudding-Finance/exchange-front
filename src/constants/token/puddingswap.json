@@ -132,6 +132,22 @@
       "chainId": 70,
       "decimals": 6,
       "logoURI": "https://swap.puddingswap.finance/images/coins/0x92a0bD4584c147D1B0e8F9185dB0BDa10B05Ed7e.png"
+    },
+    {
+      "name": "Pippi Shrimp Token",
+      "symbol": "PIPI",
+      "address": "0x685b9D0aeecD5153a332a334A04Ce1bc7A4Bf92A",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://swap.puddingswap.finance/images/coins/0x685b9D0aeecD5153a332a334A04Ce1bc7A4Bf92A.png"
+    },
+    {
+      "name": "TokenPocket Token",
+      "symbol": "TPT",
+      "address": "0x263e10bE808bafaD9bd62a0998a36d4e6B9fcb19",
+      "chainId": 70,
+      "decimals": 4,
+      "logoURI": "https://swap.puddingswap.finance/images/coins/0x263e10bE808bafaD9bd62a0998a36d4e6B9fcb19.png"
     }
   ]
 }
