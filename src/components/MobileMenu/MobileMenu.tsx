@@ -38,34 +38,14 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onDismiss, visible }) => {
             </StyledAbsoluteLink>
           </Cn>
           <Cn>
-            <StyledAbsoluteLink href="https://puddingswap.finance/xpipi">
-              <TranslatedText translationId={132}>xPIPI Pools</TranslatedText>
+            <StyledAbsoluteLink href="https://puddingswap.finance/ePUD">
+              <TranslatedText translationId={132}>ePUD Pools</TranslatedText>
             </StyledAbsoluteLink>
           </Cn>
           <Cn>
             <StyledLink className="active" to="/">
               <TranslatedText translationId={116}>Exchange</TranslatedText>
             </StyledLink>
-          </Cn>
-          <Cn>
-            <StyledAbsoluteLink href="https://puddingswap.finance/nft">
-              <TranslatedText translationId={258}>NFT</TranslatedText>
-            </StyledAbsoluteLink>
-          </Cn>
-          <Cn>
-            <StyledAbsoluteLink href="https://puddingswap.finance/ido">
-              <TranslatedText translationId={264}>IDO</TranslatedText>
-            </StyledAbsoluteLink>
-          </Cn>
-          <Cn>
-            <StyledAbsoluteLink href="https://info.pippi.finance" target="_blank">
-              <TranslatedText translationId={262}>Analytics</TranslatedText>
-            </StyledAbsoluteLink>
-          </Cn>
-          <Cn>
-            <StyledAbsoluteLink href="https://voting.pippi.finance" target="_blank">
-              <TranslatedText translationId={284}>Voting</TranslatedText>
-            </StyledAbsoluteLink>
           </Cn>
           <Bottom>
             {account && <Price className="number">1PIPI= ${pippiPrice.toFixed(3)}</Price>}
@@ -102,7 +82,6 @@ const Bg = styled.div`
   height: 300px;
   background-position: center;
   background-repeat: no-repeat;
-  background: url(${require('../../assets/images/mobile-menu-bg.png')});
   background-size: contain;
   transform: rotate(180deg);
 `

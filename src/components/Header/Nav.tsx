@@ -5,13 +5,13 @@ import TranslatedText from '../TranslatedText'
 const Nav: React.FC = () => {
   return (
     <StyledNav>
-      <StyledAbsoluteLink href="https://test.puddingswap.finance/farms">
+      <StyledAbsoluteLink href="https://puddingswap.finance/farms">
         <TranslatedText translationId={112}>Farm</TranslatedText>
       </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://test.puddingswap.finance/staking">
+      <StyledAbsoluteLink href="https://puddingswap.finance/staking">
         <TranslatedText translationId={114}>Staking</TranslatedText>
       </StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://test.puddingswap.finance/xpipi">
+      <StyledAbsoluteLink href="https://puddingswap.finance/ePud">
         <TranslatedText translationId={132}>ePUD Pools</TranslatedText>
       </StyledAbsoluteLink>
       <StyledAbsoluteLink href="https://swap.puddingswap.finance/" className="active">
