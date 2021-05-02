@@ -76,7 +76,7 @@ export default function Pool() {
               </Text>
               <Question
                 text={TranslateString(
-                  216,
+                  302,
                   'When you add liquidity, you are given pool tokens that represent your share. If you don’t see a pool you joined in this list, try importing a pool below.'
                 )}
               />
