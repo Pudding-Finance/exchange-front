@@ -65,7 +65,7 @@ export default function Pool() {
         <AutoColumn gap="lg" justify="center">
           <ButtonPrimary id="join-pool-button" as={Link} style={{ padding: 16 }} to="/add/ETH">
             <Text fontWeight={500} fontSize={20}>
-              <TranslatedText translationId={202}>Add Liquidity</TranslatedText>
+              <TranslatedText translationId={288}>Add Liquidity</TranslatedText>
             </Text>
           </ButtonPrimary>
 
