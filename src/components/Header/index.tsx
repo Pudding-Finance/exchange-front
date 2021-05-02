@@ -118,7 +118,7 @@ export default function Header() {
           <Menu onClick={handlePresentMobileMenu}>
             <img src={menuIcon} alt="menu" />
           </Menu>
-          <Title href="https://app.pippi.finance/">
+          <Title href="https://puddingswap.finance/">
             <Logo isDark={isDark} />
           </Title>
           {!isMobile && <Nav />}

@@ -28,17 +28,17 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onDismiss, visible }) => {
             </StyledAbsoluteLink>
           </Cn>
           <Cn>
-            <StyledAbsoluteLink href="https://app.pippi.finance/farms">
+            <StyledAbsoluteLink href="https://puddingswap.finance/farms">
               <TranslatedText translationId={112}>Farm</TranslatedText>
             </StyledAbsoluteLink>
           </Cn>
           <Cn>
-            <StyledAbsoluteLink href="https://app.pippi.finance/staking">
+            <StyledAbsoluteLink href="https://puddingswap.finance/staking">
               <TranslatedText translationId={114}>Staking</TranslatedText>
             </StyledAbsoluteLink>
           </Cn>
           <Cn>
-            <StyledAbsoluteLink href="https://app.pippi.finance/xpipi">
+            <StyledAbsoluteLink href="https://puddingswap.finance/xpipi">
               <TranslatedText translationId={132}>xPIPI Pools</TranslatedText>
             </StyledAbsoluteLink>
           </Cn>
@@ -48,12 +48,12 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onDismiss, visible }) => {
             </StyledLink>
           </Cn>
           <Cn>
-            <StyledAbsoluteLink href="https://app.pippi.finance/nft">
+            <StyledAbsoluteLink href="https://puddingswap.finance/nft">
               <TranslatedText translationId={258}>NFT</TranslatedText>
             </StyledAbsoluteLink>
           </Cn>
           <Cn>
-            <StyledAbsoluteLink href="https://app.pippi.finance/ido">
+            <StyledAbsoluteLink href="https://puddingswap.finance/ido">
               <TranslatedText translationId={264}>IDO</TranslatedText>
             </StyledAbsoluteLink>
           </Cn>
