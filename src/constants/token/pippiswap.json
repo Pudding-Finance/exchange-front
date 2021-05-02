@@ -10,13 +10,5 @@
   "logoURI": "https://swap.puddingswap.finance/images/192x192_App_Icon.png",
   "keywords": ["puddingswap", "default"],
   "tokens": [
-    {
-      "name": "PuddingSwap Token",
-      "symbol": "PUD",
-      "address": "0x96D808A323d9eB1De23F7d82F83574e6969c5591",
-      "chainId": 170,
-      "decimals": 18,
-      "logoURI": "https://swap.puddingswap.finance/images/coins/0x96D808A323d9eB1De23F7d82F83574e6969c5591.png"
-    }
   ]
 }
