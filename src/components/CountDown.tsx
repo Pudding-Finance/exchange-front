@@ -46,22 +46,22 @@ export default function CountDown() {
 
   return (
     <Container>
-      <Title>{TranslateString(103, 'Farm Reward Reduction CountDown')}</Title>
+      <Title>{TranslateString(746, 'Farm Reward Reduction CountDown')}</Title>
       <TimeItem>
         <span>{days}</span>
-        <span>{TranslateString(104, 'D')}</span>
+        <span>{'D'}</span>
       </TimeItem>
       <TimeItem>
         <span>{hours}</span>
-        <span>{TranslateString(106, 'H')}</span>
+        <span>{'H'}</span>
       </TimeItem>
       <TimeItem>
         <span>{minutes}</span>
-        <span>{TranslateString(110, 'M')}</span>
+        <span>{'M'}</span>
       </TimeItem>
       <TimeItem>
         <span>{seconds}</span>
-        <span>{TranslateString(108, 'S')}</span>
+        <span>{'S'}</span>
       </TimeItem>
     </Container>
   )
