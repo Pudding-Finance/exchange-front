@@ -27,6 +27,7 @@ import { LanguageContext } from '../hooks/LanguageContext'
 import { TranslationsContext } from '../hooks/TranslationsContext'
 import { allLanguages } from '../constants/localisation/languageCodes'
 import cookie from '../utils/cookie'
+import CountDown from '../components/CountDown'
 
 const AppWrapper = styled.div`
   display: flex;
@@ -142,6 +143,7 @@ export default function App() {
             <TranslationsContext.Provider value={{ translations, setTranslations }}>
               <HeaderWrapper>
                 <Header />
+                <CountDown />
               </HeaderWrapper>
               <BodyWrapper>
                 <Popups />

@@ -17,10 +17,10 @@ export function isAddress(value: any): string | false {
   }
 }
 
-const ETHERSCAN_PREFIXES: { [chainId in ChainId]: string } = {
-  70: '',
-  170: 'testnet.'
-}
+// const ETHERSCAN_PREFIXES: { [chainId in ChainId]: string } = {
+//   70: '',
+//   170: 'testnet.'
+// }
 
 export function getEtherscanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
   const prefix = `https://www.hscscan.com`
