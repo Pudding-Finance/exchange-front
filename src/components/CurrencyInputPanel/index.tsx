@@ -137,7 +137,7 @@ export default function CurrencyInputPanel({
   onUserInput,
   onMax,
   showMaxButton,
-  label = TranslateString(212, 'Input'),
+  label = TranslateString(298, 'Input'),
   onCurrencySelect,
   currency,
   disableCurrencySelect = false,
