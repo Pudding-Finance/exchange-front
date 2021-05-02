@@ -23,7 +23,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onDismiss, visible }) => {
         <StyledMobileMenu>
           <Bg></Bg>
           <Cn>
-            <StyledAbsoluteLink href="https://app.pippi.finance">
+            <StyledAbsoluteLink href="https://puddingswap.finance">
               <TranslatedText translationId={130}>Home</TranslatedText>
             </StyledAbsoluteLink>
           </Cn>
