@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from 'react'
+import React, { useCallback, useState } from 'react'
 import { isMobile } from 'react-device-detect'
 // import { Text } from 'rebass'
 
@@ -101,6 +101,10 @@ const Price = styled.div`
   font-weight: bolder;
 `
 
+function isZero(num: number) {
+  return Math.abs(num - 0) <= 1e-8
+}
+
 export default function Header() {
   const isDark = useIsDarkMode()
   const { pippiPrice } = useHtPrice()
@@ -134,7 +138,7 @@ export default function Header() {
             <HeaderElement>
               <StyledAccountButtonWrapper>
                 <Web3Status />
-                {/* <Price className="number price">1PUD=${pippiPrice.toFixed(3)}</Price> */}
+                {!isZero(pippiPrice) && <Price className="number price">1PUD=${pippiPrice.toFixed(3)}</Price>}
                 <AccountButton />
                 <Settings />
                 <LngSwithForWeb />

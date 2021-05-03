@@ -18,6 +18,7 @@ import { SwapState } from './reducer'
 import useToggledVersion from '../../hooks/useToggledVersion'
 import { useUserSlippageTolerance } from '../user/hooks'
 import { computeSlippageAdjustedAmounts } from '../../utils/prices'
+import { TranslateString } from '../../utils/translateTextHelpers'
 
 export function useSwapState(): AppState['swap'] {
   return useSelector<AppState, AppState['swap']>(state => state.swap)
@@ -160,11 +161,11 @@ export function useDerivedSwapInfo(): {
 
   let inputError: string | undefined
   if (!account) {
-    inputError = 'Connect Wallet'
+    inputError = TranslateString(204, 'Enter an amount')
   }
 
   if (!parsedAmount) {
-    inputError = inputError ?? 'Enter an amount'
+    inputError = inputError ?? TranslateString(296, 'Enter an amount')
   }
 
   if (!currencies[Field.INPUT] || !currencies[Field.OUTPUT]) {
