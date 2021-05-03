@@ -11,8 +11,14 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const HUSD = new Token(ChainId.MAINNET, '0x92a0bD4584c147D1B0e8F9185dB0BDa10B05Ed7e', 6, 'HUSD', 'Hoo-Peg USDC Token')
-export const USDT = new Token(ChainId.MAINNET, '0xD16bAbe52980554520F6Da505dF4d1b124c815a7', 6, 'USDT', 'Hoo-Peg Tether Token')
+// export const HUSD = new Token(ChainId.MAINNET, '0x92a0bD4584c147D1B0e8F9185dB0BDa10B05Ed7e', 6, 'HUSD', 'Hoo-Peg USDC Token')
+export const USDT = new Token(
+  ChainId.MAINNET,
+  '0xD16bAbe52980554520F6Da505dF4d1b124c815a7',
+  6,
+  'USDT',
+  'Hoo-Peg Tether Token'
+)
 export const ETH = new Token(ChainId.MAINNET, '0xA1588dC914e236bB5AE4208Ce3081246f7A00193', 18, 'ETH', 'Hoo-Peg ETH')
 
 const WETH_ONLY: ChainTokenList = {
@@ -23,7 +29,7 @@ const WETH_ONLY: ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], HUSD, USDT]
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], USDT]
 }
 
 /**
@@ -32,20 +38,20 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
  */
 export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: Token[] } } = {
   [ChainId.MAINNET]: {
-    [ETH.address]: [HUSD, WETH[ChainId.MAINNET]]
+    [ETH.address]: [WETH[ChainId.MAINNET]]
   }
 }
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], HUSD, USDT]
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], USDT]
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], HUSD, USDT]
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], USDT]
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
@@ -54,7 +60,7 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
       new Token(ChainId.MAINNET, '0xbE8D16084841875a1f398E6C3eC00bBfcbFa571b', 18, 'PUD', 'PuddingSwap Token'),
       new Token(ChainId.MAINNET, '0x3EFF9D389D13D6352bfB498BCF616EF9b1BEaC87', 18, 'WHOO', 'Wrapped HOO')
     ],
-    [HUSD, USDT]
+    // [USDT]
   ]
 }
 
