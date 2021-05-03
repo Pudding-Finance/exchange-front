@@ -22,27 +22,28 @@ const Container = styled.div`
 
 const Title = styled.div`
   font-size: 18px;
+  font-weight: bold;
   margin-right: 50px;
-  @media (max-width: 500px) {
+  @media (max-width: 764px) {
     margin-right: 20px;
   }
 `
 
 const TimeItem = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 32px;
+  align-items: baseline;
+  font-weight: bold;
   span {
     &:nth-child(1) {
-      font-size: 24px;
+      font-size: 36px;
     }
     &:nth-child(2) {
-      font-size: 18px;
+      font-size: 14px;
+      margin-left: 4px;
     }
   }
   & + & {
-    margin-left: 24px;
+    margin-left: 16px;
   }
 `
 

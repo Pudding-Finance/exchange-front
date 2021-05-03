@@ -134,7 +134,7 @@ export default function Header() {
             <HeaderElement>
               <StyledAccountButtonWrapper>
                 <Web3Status />
-                <Price className="number price">1PUD=${pippiPrice.toFixed(3)}</Price>
+                {/* <Price className="number price">1PUD=${pippiPrice.toFixed(3)}</Price> */}
                 <AccountButton />
                 <Settings />
                 <LngSwithForWeb />

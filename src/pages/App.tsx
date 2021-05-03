@@ -96,7 +96,7 @@ export default function App() {
 
   useEffect(() => {
     setSelectedLanguage(EN)
-    const storedLangCode = cookie.getCookie('pipipSwapLanguage')
+    const storedLangCode = cookie.getCookie('puddingSwapLanguage')
     if (storedLangCode) {
       const storedLang = getStoredLang(storedLangCode)
       setSelectedLanguage(storedLang)
@@ -123,7 +123,7 @@ export default function App() {
   }
   const handleSetSelectedLanguage = obj => {
     setSelectedLanguage(obj)
-    cookie.setCookie('pipipSwapLanguage', obj.code)
+    cookie.setCookie('puddingSwapLanguage', obj.code)
   }
   useEffect(() => {
     if (selectedLanguage) {
