@@ -12,6 +12,10 @@ interface MobileMenuProps {
   visible?: boolean
 }
 
+function isZero(num: number) {
+  return Math.abs(num - 0) <= 1e-8
+}
+
 // eslint-disable-next-line react/prop-types
 const MobileMenu: React.FC<MobileMenuProps> = ({ onDismiss, visible }) => {
   const { pippiPrice } = useHTPrice()
@@ -29,26 +33,26 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onDismiss, visible }) => {
           </Cn>
           <Cn>
             <StyledAbsoluteLink href="https://puddingswap.finance/farms">
-              <TranslatedText translationId={112}>Farm</TranslatedText>
+              <TranslatedText translationId={198}>Farm</TranslatedText>
             </StyledAbsoluteLink>
           </Cn>
           <Cn>
             <StyledAbsoluteLink href="https://puddingswap.finance/staking">
-              <TranslatedText translationId={114}>Staking</TranslatedText>
+              <TranslatedText translationId={200}>Staking</TranslatedText>
             </StyledAbsoluteLink>
           </Cn>
           <Cn>
             <StyledAbsoluteLink href="https://puddingswap.finance/ePUD">
-              <TranslatedText translationId={132}>ePUD Pools</TranslatedText>
+              <TranslatedText translationId={218}>ePUD Pools</TranslatedText>
             </StyledAbsoluteLink>
           </Cn>
           <Cn>
             <StyledLink className="active" to="/">
-              <TranslatedText translationId={116}>Exchange</TranslatedText>
+              <TranslatedText translationId={202}>Exchange</TranslatedText>
             </StyledLink>
           </Cn>
           <Bottom>
-            {account && <Price className="number">1PIPI= ${pippiPrice.toFixed(3)}</Price>}
+            {account && !isZero(pippiPrice) && <Price className="number">1PUD=${pippiPrice.toFixed(3)}</Price>}
             <LngSwith className="mobile-lng-swith"></LngSwith>
           </Bottom>
         </StyledMobileMenu>
@@ -68,7 +72,7 @@ const Bottom = styled.div`
   margin: auto;
   text-align: center;
   .mobile-lng-swith {
-    width:100%;
+    width: 100%;
     height: 30px;
     line-height: 30px;
     margin-bottom: 20px;
@@ -91,7 +95,7 @@ const StyledBackdrop = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: ${(props) => props.theme.colors.bg5};
+  background-color: ${props => props.theme.colors.bg5};
 `
 
 const StyledMobileMenuWrapper = styled.div`
@@ -114,8 +118,8 @@ const slideIn = keyframes`
 
 const StyledMobileMenu = styled.div`
   animation: ${slideIn} 0.3s forwards ease-out;
-  background-color: ${(props) => props.theme.colors.bg1};
-  border-left: 1px solid ${(props) => props.theme.colors.bg1};
+  background-color: ${props => props.theme.colors.bg1};
+  border-left: 1px solid ${props => props.theme.colors.bg1};
   position: absolute;
   top: 0;
   right: 100%;
@@ -127,25 +131,25 @@ const StyledMobileMenu = styled.div`
 const StyledLink = styled(NavLink)`
   position: relative;
   box-sizing: border-box;
-  color: rgb(127,134,143);
+  color: rgb(127, 134, 143);
   font-size: 16px;
   font-weight: 700;
   text-align: left;
   text-decoration: none;
   &.active {
-    color: ${(props) => props.theme.colors.red3};
+    color: ${props => props.theme.colors.red3};
   }
 `
 const StyledAbsoluteLink = styled.a`
   position: relative;
-  color: rgb(127,134,143);
+  color: rgb(127, 134, 143);
   font-weight: 700;
   text-decoration: none;
   &:hover {
-    color: ${(props) => props.theme.colors.red3};
+    color: ${props => props.theme.colors.red3};
   }
   &.active {
-    color: ${(props) => props.theme.colors.red3};
+    color: ${props => props.theme.colors.red3};
   }
 `
 const Cn = styled.div`
