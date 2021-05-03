@@ -56,7 +56,7 @@ export default function CountDown() {
 
   return (
     <Container>
-      <Title>{TranslateString(746, 'Farm Reward Reduction CountDown')}</Title>
+      <Title>{TranslateString(756, 'Farm CountDown')}</Title>
       <TimeItem>
         <span>{days}</span>
         <span>{'D'}</span>
