@@ -222,7 +222,7 @@ export default function CurrencyInputPanel({
                     ? currency.symbol.slice(0, 4) +
                       '...' +
                       currency.symbol.slice(currency.symbol.length - 5, currency.symbol.length)
-                    : currency?.symbol) || <TranslatedText translationId={180}>Select a currency</TranslatedText>}
+                    : currency?.symbol) || <TranslatedText translationId={266}>Select a currency</TranslatedText>}
                 </StyledTokenName>
               )}
               {!disableCurrencySelect && <StyledDropDown selected={!!currency} />}

@@ -5,6 +5,7 @@ import useHTPrice from '../../hooks/useHtPrice'
 import useTokenBalance from '../../hooks/useTokenBalance'
 import { getBalanceNumber } from '../../utils/formatBalance'
 import { getPipiAddress } from '../../utils/addressHelpers'
+import { TranslateString } from '../../utils/translateTextHelpers'
 import { useWalletModalToggle } from '../../state/application/hooks'
 import { useActiveWeb3React } from '../../hooks'
 import TranslatedText from '../TranslatedText'
@@ -38,7 +39,7 @@ const AccountButton: React.FC<AccountButtonProps> = () => {
     <StyledAccountButton>
       {!account ? (
         <Button onClick={toggleWalletModal}>
-          <TranslatedText translationId={118}>Unlock Wallet</TranslatedText>
+          <TranslatedText translationId={204}>Connect Wallet</TranslatedText>
         </Button>
       ) : (
         <AccountCn>
@@ -51,7 +52,7 @@ const AccountButton: React.FC<AccountButtonProps> = () => {
           </AccountInner>
           <Modal className="modal">
             <Content>
-              <div className="title">your wallet</div>
+              <div className="title">{TranslateString(758, 'your wallet')}</div>
               <div className="subtitle">
                 <span>{shortenAddress(account)}</span>
                 <img src={copyIcon} alt="" onClick={copy} />
@@ -59,17 +60,17 @@ const AccountButton: React.FC<AccountButtonProps> = () => {
             </Content>
             <Content>
               <div className="title">
-                <TranslatedText translationId={140}>Your Pudding Balance</TranslatedText>
+                <TranslatedText translationId={226}>Your Pudding Balance</TranslatedText>
               </div>
               <div className="money">{getBalanceNumber(sushiBalance)}</div>
               <div className="title usdt">=${getBalanceNumber(sushiBalance) * pippiPrice}</div>
               <Link href={`https://www.hscscan.com/address?address=${account}`}>
-                <TranslatedText translationId={164}>View on HscScan</TranslatedText>
+                <TranslatedText translationId={250}>View on HscScan</TranslatedText>
               </Link>
             </Content>
             <div className="flex">
               <ButtonCustom onClick={handleSignOutClick}>
-                <TranslatedText translationId={166}>Sign out</TranslatedText>
+                <TranslatedText translationId={252}>Sign out</TranslatedText>
               </ButtonCustom>
             </div>
           </Modal>

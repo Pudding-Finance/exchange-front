@@ -40,6 +40,7 @@ import { useDerivedBurnInfo, useBurnState } from '../../state/burn/hooks'
 import { Field } from '../../state/burn/actions'
 import { useWalletModalToggle } from '../../state/application/hooks'
 import { useUserDeadline, useUserSlippageTolerance } from '../../state/user/hooks'
+import { TranslateString } from '../../utils/translateTextHelpers'
 import { BigNumber } from '@ethersproject/bignumber'
 
 export default function RemoveLiquidity({
@@ -640,7 +641,7 @@ export default function RemoveLiquidity({
             )}
             <div style={{ position: 'relative' }}>
               {!account ? (
-                <ButtonLight onClick={toggleWalletModal}>Connect Wallet</ButtonLight>
+                <ButtonLight onClick={toggleWalletModal}>{TranslateString(204, 'Connect Wallet')}</ButtonLight>
               ) : (
                 <RowBetween>
                   <ButtonConfirmed

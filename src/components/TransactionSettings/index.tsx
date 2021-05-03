@@ -3,6 +3,7 @@ import styled, { ThemeContext } from 'styled-components'
 
 import QuestionHelper from '../QuestionHelper'
 import { TYPE } from '../../components/Shared'
+import { TranslateString } from '../../utils/translateTextHelpers'
 import { AutoColumn } from '../Column'
 import { RowBetween, RowFixed } from '../Row'
 
@@ -151,9 +152,9 @@ export default function SlippageTabs({ rawSlippage, setRawSlippage, deadline, se
       <AutoColumn gap="sm">
         <RowFixed>
           <TYPE.black fontWeight={400} fontSize={14} color={theme.colors.text2}>
-            <TranslatedText translationId={196}>Slippage tolerance</TranslatedText>
+            <TranslatedText translationId={282}>Slippage tolerance</TranslatedText>
           </TYPE.black>
-          <QuestionHelper text="Your transaction will revert if the price changes unfavorably by more than this percentage." />
+          <QuestionHelper text={TranslateString(762, "Your transaction will revert if the price changes unfavorably by more than this percentage.")} />
         </RowFixed>
         <RowBetween>
           <Option
@@ -228,9 +229,9 @@ export default function SlippageTabs({ rawSlippage, setRawSlippage, deadline, se
       <AutoColumn gap="sm">
         <RowFixed>
           <TYPE.black fontSize={14} fontWeight={400} color={theme.colors.text2}>
-            <TranslatedText translationId={198}>Transaction deadline</TranslatedText>
+            <TranslatedText translationId={284}>Transaction deadline</TranslatedText>
           </TYPE.black>
-          <QuestionHelper text="Your transaction will revert if it is pending for more than this long." />
+          <QuestionHelper text={TranslateString(760, "Your transaction will revert if it is pending for more than this long.")}  />
         </RowFixed>
         <RowFixed>
           <OptionCustom style={{ width: '80px' }} tabIndex={-1}>
@@ -245,7 +246,7 @@ export default function SlippageTabs({ rawSlippage, setRawSlippage, deadline, se
             />
           </OptionCustom>
           <TYPE.body style={{ paddingLeft: '8px' }} fontSize={14}>
-            <TranslatedText translationId={200}>minutes</TranslatedText>
+            <TranslatedText translationId={286}>minutes</TranslatedText>
           </TYPE.body>
         </RowFixed>
       </AutoColumn>
