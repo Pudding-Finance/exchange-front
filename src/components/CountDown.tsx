@@ -48,7 +48,7 @@ const TimeItem = styled.div`
 `
 
 export default function CountDown() {
-  const { days, minutes, hours, seconds, remainTime } = useCutDown(new Date('2021-05-04T20:00:00+08:00'))
+  const { days, minutes, hours, seconds, remainTime } = useCutDown(new Date('2021-05-04T21:00:00+08:00'))
 
   if (remainTime <= 0) {
     return null
