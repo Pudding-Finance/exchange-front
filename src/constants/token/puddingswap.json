@@ -152,7 +152,7 @@
     {
       "name": "Filecoin",
       "symbol": "FIL",
-      "address": "0bf85d3b0c9ebcc282fde0591882d12e57e700b3",
+      "address": "0x0bf85d3b0c9ebcc282fde0591882d12e57e700b3",
       "chainId": 70,
       "decimals": 4,
       "logoURI": "https://swap.puddingswap.finance/images/coins/0x0bf85d3b0c9ebcc282fde0591882d12e57e700b3.png"
