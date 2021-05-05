@@ -27,7 +27,6 @@ import { LanguageContext } from '../hooks/LanguageContext'
 import { TranslationsContext } from '../hooks/TranslationsContext'
 import { allLanguages } from '../constants/localisation/languageCodes'
 import cookie from '../utils/cookie'
-import CountDown from '../components/CountDown'
 
 const AppWrapper = styled.div`
   display: flex;
@@ -144,7 +143,6 @@ export default function App() {
               <HeaderWrapper>
                 <Header />
               </HeaderWrapper>
-              <CountDown />
               <BodyWrapper>
                 <Popups />
                 <Web3ReactManager>
