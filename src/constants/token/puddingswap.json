@@ -156,6 +156,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x0bf85D3B0C9ebCC282FDe0591882d12E57E700B3.png"
+    },
+    {
+      "name": "LDT",
+      "symbol": "LDT",
+      "address": "0xd63F3cceef518e183e27615A7D6404d0803210Af",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://swap.puddingswap.finance/images/coins/0xd63F3cceef518e183e27615A7D6404d0803210Af.png"
     }
   ]
 }
