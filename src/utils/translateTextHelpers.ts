@@ -1,37 +1,46 @@
- /* eslint-disable */ 
+/* eslint-disable */
+
 import { useContext } from 'react'
+import { isEmpty } from 'lodash'
 import { TranslationsContext } from '../hooks/TranslationsContext'
 
-const variableRegex = /\%(.*?)\%/
-
-const replaceDynamicString = (foundTranslation: string, fallback: string) => {
-  const stringToReplace = variableRegex.exec(foundTranslation)![0]
-  const indexToReplace = foundTranslation.split(' ').indexOf(stringToReplace)
-  const fallbackValueAtIndex = fallback.split(' ')[indexToReplace]
-  return foundTranslation.replace(stringToReplace, fallbackValueAtIndex)
+interface ContextData {
+  [key: string]: number | string
 }
 
-export const getTranslation = (translations: Array<any>, translationId: number, fallback: string) => {
+const Regex = /%[a-zA-Z-_]+%/
+
+function interploateText(text: string, data: any) {
+  const includesVariable = text.match(Regex)
+
+  if (!includesVariable || isEmpty(data)) {
+    return text
+  }
+
+  let interpolatedText = text
+
+  Object.keys(data).forEach(dataKey => {
+    const templateKey = new RegExp(`%${dataKey}%`, 'g')
+    interpolatedText = interpolatedText.replace(templateKey, data[dataKey])
+  })
+
+  return interpolatedText
+}
+
+export const TranslateString = (translationId: number, fallback: string, data: ContextData = {}) => {
+  const { translations } = useContext(TranslationsContext)
+  if (translations.length === 0) {
+    return interploateText(fallback, data)
+  }
+
   const foundTranslation = translations.find(translation => {
     return translation.data.stringId === translationId
-  })
-  if (foundTranslation) {
-    const translatedString = foundTranslation.data.text
-    const includesVariable = translatedString.includes('%')
-    if (includesVariable) {
-      return replaceDynamicString(translatedString, fallback)
-    }
-    return translatedString
-  } else {
-    return fallback
-  }
-}
+  }) || { data: { text: fallback } }
 
-export const TranslateString = (translationId: number, fallback: string) => {
-  const { translations } = useContext(TranslationsContext)
-  if (translations[0] === 'error') {
-    return fallback
-  } else if (translations.length > 0) {
-    return getTranslation(translations, translationId, fallback)
+  if (foundTranslation) {
+    const { text } = foundTranslation.data
+    return interploateText(text, data)
   }
+
+  return interploateText(fallback, data)
 }

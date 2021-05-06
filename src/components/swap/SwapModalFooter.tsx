@@ -11,6 +11,7 @@ import {
   formatExecutionPrice,
   warningSeverity
 } from '../../utils/prices'
+import { TranslateString } from '../../utils/translateTextHelpers'
 import { ButtonError } from '../Button'
 import { AutoColumn } from '../Column'
 import QuestionHelper from '../QuestionHelper'
@@ -69,9 +70,16 @@ export default function SwapModalFooter({
         <RowBetween>
           <RowFixed>
             <TYPE.black fontSize={14} fontWeight={400} color={theme.colors.text2}>
-              {trade.tradeType === TradeType.EXACT_INPUT ? 'Minimum received' : 'Maximum sold'}
+              {trade.tradeType === TradeType.EXACT_INPUT
+                ? TranslateString(828, 'Minimum received')
+                : TranslateString(830, 'Maximum sold')}
             </TYPE.black>
-            <QuestionHelper text="Your transaction will revert if there is a large, unfavorable price movement before it is confirmed." />
+            <QuestionHelper
+              text={TranslateString(
+                832,
+                'Your transaction will revert if there is a large, unfavorable price movement before it is confirmed.'
+              )}
+            />
           </RowFixed>
           <RowFixed>
             <TYPE.black fontSize={14}>
@@ -89,18 +97,34 @@ export default function SwapModalFooter({
         <RowBetween>
           <RowFixed>
             <TYPE.black color={theme.colors.text2} fontSize={14} fontWeight={400}>
-              Price Impact
+              {TranslateString(836, 'Price Impact')}
             </TYPE.black>
-            <QuestionHelper text="The difference between the market price and your price due to trade size." />
+            <QuestionHelper
+              text={TranslateString(
+                834,
+                'The difference between the market price and estimated price due to trade size.'
+              )}
+            />
           </RowFixed>
           <FormattedPriceImpact priceImpact={priceImpactWithoutFee} />
         </RowBetween>
         <RowBetween>
           <RowFixed>
             <TYPE.black fontSize={14} fontWeight={400} color={theme.colors.text2}>
-              Liquidity Provider Fee
+              {TranslateString(838, 'Liquidity Provider Fee')}
             </TYPE.black>
-            <QuestionHelper text="For each trade a 0.2% fee is paid. 0.15% goes to liquidity providers and 0.05% goes to the PIPPISwap treasury." />
+            <QuestionHelper
+              text={TranslateString(
+                826,
+                'For each trade a %totalFee% fee is paid. %treasuryFee% goes to liquidity providers and %teamFee% goes to the %team% treasury.',
+                {
+                  totalFee: '0.2',
+                  treasuryFee: '0.15%',
+                  teamFee: '0.05%',
+                  team: 'PuddingSwap'
+                }
+              )}
+            />
           </RowFixed>
           <TYPE.black fontSize={14}>
             {realizedLPFee ? realizedLPFee?.toSignificant(6) + ' ' + trade.inputAmount.currency.symbol : '-'}
