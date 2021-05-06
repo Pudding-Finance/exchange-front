@@ -66,12 +66,14 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
             </TYPE.black>
             <QuestionHelper
               text={TranslateString(
-                826,
-                'For each trade a %totalFee% fee is paid. %treasuryFee% goes to liquidity providers and %teamFee% goes to the %team% treasury.',
+                844,
+                'For each trade a %totalFee% fee is paid. %treasuryFee% goes to liquidity providers, %teamFee% goes to the %team% treasury and %buybackFee% goes to %token% buyback and burn.',
                 {
-                  totalFee: '0.2',
+                  totalFee: '0.25',
                   treasuryFee: '0.15%',
                   teamFee: '0.05%',
+                  buybackFee: '0.05%',
+                  token: 'PUD',
                   team: 'PuddingSwap'
                 }
               )}
@@ -110,7 +112,12 @@ export function AdvancedSwapDetails({ trade }: AdvancedSwapDetailsProps) {
                   <TYPE.black fontSize={14} fontWeight={400} color={theme.colors.text2}>
                     {TranslateString(840, 'Route')}
                   </TYPE.black>
-                  <QuestionHelper text={TranslateString(842, 'Routing through these tokens resulted in the best price for your trade.')} />
+                  <QuestionHelper
+                    text={TranslateString(
+                      842,
+                      'Routing through these tokens resulted in the best price for your trade.'
+                    )}
+                  />
                 </RowFixed>
                 <SwapRoute trade={trade} />
               </AutoColumn>

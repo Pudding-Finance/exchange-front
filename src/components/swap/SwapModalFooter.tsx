@@ -115,12 +115,14 @@ export default function SwapModalFooter({
             </TYPE.black>
             <QuestionHelper
               text={TranslateString(
-                826,
-                'For each trade a %totalFee% fee is paid. %treasuryFee% goes to liquidity providers and %teamFee% goes to the %team% treasury.',
+                844,
+                'For each trade a %totalFee% fee is paid. %treasuryFee% goes to liquidity providers, %teamFee% goes to the %team% treasury and %buybackFee% goes to %token% buyback and burn.',
                 {
-                  totalFee: '0.2',
+                  totalFee: '0.25',
                   treasuryFee: '0.15%',
                   teamFee: '0.05%',
+                  buybackFee: '0.05%',
+                  token: 'PUD',
                   team: 'PuddingSwap'
                 }
               )}
