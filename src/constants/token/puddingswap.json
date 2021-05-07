@@ -164,6 +164,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://swap.puddingswap.finance/images/coins/0xd63F3cceef518e183e27615A7D6404d0803210Af.png"
+    },
+    {
+      "name": "LOOT",
+      "symbol": "LOOT",
+      "address": "0xD8f6d61C2cC69c04F176616aD1c7de211b00af31",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://swap.puddingswap.finance/images/coins/0xD8f6d61C2cC69c04F176616aD1c7de211b00af31.png"
     }
   ]
 }
