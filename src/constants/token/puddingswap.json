@@ -163,7 +163,7 @@
       "address": "0xd63F3cceef518e183e27615A7D6404d0803210Af",
       "chainId": 70,
       "decimals": 18,
-      "logoURI": "https://swap.puddingswap.finance/images/coins/0xd63F3cceef518e183e27615A7D6404d0803210Af.png"
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0xd63F3cceef518e183e27615A7D6404d0803210Af.png"
     },
     {
       "name": "LOOT",
@@ -171,7 +171,7 @@
       "address": "0xD8f6d61C2cC69c04F176616aD1c7de211b00af31",
       "chainId": 70,
       "decimals": 18,
-      "logoURI": "https://swap.puddingswap.finance/images/coins/0xD8f6d61C2cC69c04F176616aD1c7de211b00af31.png"
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0xD8f6d61C2cC69c04F176616aD1c7de211b00af31.png"
     },
     {
       "name": "GFC",
@@ -179,7 +179,7 @@
       "address": "0xE9FB7d75822064A71aE2F4E8626D6407F70Fb4eF",
       "chainId": 70,
       "decimals": 18,
-      "logoURI": "https://swap.puddingswap.finance/images/coins/0xE9FB7d75822064A71aE2F4E8626D6407F70Fb4eF.png"
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0xE9FB7d75822064A71aE2F4E8626D6407F70Fb4eF.png"
     }
   ]
 }
