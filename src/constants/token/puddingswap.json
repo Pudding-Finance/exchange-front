@@ -192,10 +192,10 @@
     {
       "name": "MOF",
       "symbol": "MOF",
-      "address": "0x34BEB4F81D8C5C18DCF3ED6B9A3D5B1A18A1627E",
+      "address": "0x7e49b17552c2e41555c3C8CBF3bE742796019442",
       "chainId": 70,
       "decimals": 18,
-      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x34BEB4F81D8C5C18DCF3ED6B9A3D5B1A18A1627E.png"
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x7e49b17552c2e41555c3C8CBF3bE742796019442.png"
     }
   ]
 }
