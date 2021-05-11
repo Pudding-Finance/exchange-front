@@ -188,6 +188,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0xE9FB7d75822064A71aE2F4E8626D6407F70Fb4eF.png"
+    },
+    {
+      "name": "MOF",
+      "symbol": "MOF",
+      "address": "0x34BEB4F81D8C5C18DCF3ED6B9A3D5B1A18A1627E",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x34BEB4F81D8C5C18DCF3ED6B9A3D5B1A18A1627E.png"
     }
   ]
 }
