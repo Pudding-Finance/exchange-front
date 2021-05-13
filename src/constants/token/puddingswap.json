@@ -196,6 +196,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x7e49b17552c2e41555c3C8CBF3bE742796019442.png"
+    },
+    {
+      "name": "Hoomoon",
+      "symbol": "hoomoon",
+      "address": "0x9ADd100b10442269bFb650488C5e48Ae3CBCF1d2",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x9ADd100b10442269bFb650488C5e48Ae3CBCF1d2.png"
     }
   ]
 }
