@@ -204,6 +204,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x9ADd100b10442269bFb650488C5e48Ae3CBCF1d2.png"
+    },
+    {
+      "name": "Kitty Coin",
+      "symbol": "KITTY",
+      "address": "0x66068f0460B2932f79C0B31B02AcF0ef4ECB175C",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x66068f0460B2932f79C0B31B02AcF0ef4ECB175C.png"
     }
   ]
 }
