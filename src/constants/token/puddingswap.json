@@ -212,6 +212,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x66068f0460B2932f79C0B31B02AcF0ef4ECB175C.png"
+    },
+    {
+      "name": "PIGX",
+      "symbol": "PIGX",
+      "address": "0x35f75b8a1545af83d71c60d5f6cda71ecbfdc24c",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x35f75b8a1545af83d71c60d5f6cda71ecbfdc24c.png"
     }
   ]
 }
