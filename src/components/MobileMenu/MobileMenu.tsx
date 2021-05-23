@@ -56,6 +56,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onDismiss, visible }) => {
               <TranslatedText translationId={348}>Analytics</TranslatedText>
             </StyledAbsoluteLink>
           </Cn>
+          <Cn>
+            <StyledAbsoluteLink href="https://voting.puddingswap.finance">
+              <TranslatedText translationId={370}>Voting</TranslatedText>
+            </StyledAbsoluteLink>
+          </Cn>
           <Bottom>
             {account && !isZero(pippiPrice) && <Price className="number">1PUD=${pippiPrice.toFixed(3)}</Price>}
             <LngSwith className="mobile-lng-swith"></LngSwith>
