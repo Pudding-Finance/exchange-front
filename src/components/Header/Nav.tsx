@@ -20,6 +20,9 @@ const Nav: React.FC = () => {
       <StyledAbsoluteLink href="https://info.puddingswap.finance">
         <TranslatedText translationId={348}>Analytics</TranslatedText>
       </StyledAbsoluteLink>
+      <StyledAbsoluteLink href="https://voting.puddingswap.finance">
+        <TranslatedText translationId={370}>Voting</TranslatedText>
+      </StyledAbsoluteLink>
     </StyledNav>
   )
 }
