@@ -220,6 +220,22 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x35f75b8a1545af83d71c60d5f6cda71ecbfdc24c.png"
+    },
+    {
+      "name": "ZILD",
+      "symbol": "ZILD",
+      "address": "0xB328002712466111606456FFd55f820bcb9cf18F",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0xB328002712466111606456FFd55f820bcb9cf18F.png"
+    },
+    {
+      "name": "LAYER2",
+      "symbol": "LAYER2",
+      "address": "0xebBD83abDe1c794CC587dEFeA49d33573dE29211",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0xebBD83abDe1c794CC587dEFeA49d33573dE29211.png"
     }
   ]
 }
