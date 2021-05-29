@@ -17,6 +17,9 @@ const Nav: React.FC = () => {
       <StyledAbsoluteLink href="https://exchange.puddingswap.finance/" className="active">
         <TranslatedText translationId={202}>Exchange</TranslatedText>
       </StyledAbsoluteLink>
+      <StyledAbsoluteLink href="https://puddingswap.finance/ido" className="active">
+        IDO
+      </StyledAbsoluteLink>
       <StyledAbsoluteLink href="https://info.puddingswap.finance">
         <TranslatedText translationId={348}>Analytics</TranslatedText>
       </StyledAbsoluteLink>
@@ -40,7 +43,7 @@ const StyledAbsoluteLink = styled.a`
   margin-right: 24px;
   text-decoration: none;
   &:hover {
-    color: ${({ theme }) => theme.colors.primary}
+    color: ${({ theme }) => theme.colors.primary};
   }
   @media (max-width: 400px) {
     margin-right: 24px;

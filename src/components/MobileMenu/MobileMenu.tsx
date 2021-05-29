@@ -52,6 +52,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onDismiss, visible }) => {
             </StyledLink>
           </Cn>
           <Cn>
+            <StyledAbsoluteLink href="https://puddingswap.finance/ido">IDO</StyledAbsoluteLink>
+          </Cn>
+          <Cn>
             <StyledAbsoluteLink href="https://info.puddingswap.finance">
               <TranslatedText translationId={348}>Analytics</TranslatedText>
             </StyledAbsoluteLink>
