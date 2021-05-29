@@ -236,6 +236,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0xebBD83abDe1c794CC587dEFeA49d33573dE29211.png"
+    },
+    {
+      "name": "Yunge Protocol",
+      "symbol": "YUNGE",
+      "address": "0x07f823D3d011f7C612084f04D025F4a026F76afd",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x07f823D3d011f7C612084f04D025F4a026F76afd.png"
     }
   ]
 }
