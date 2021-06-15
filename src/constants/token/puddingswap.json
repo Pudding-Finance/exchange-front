@@ -244,6 +244,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x07f823D3d011f7C612084f04D025F4a026F76afd.png"
+    },
+    {
+      "name": "Moneta",
+      "symbol": "MNA",
+      "address": "0x124c04Ed0ED67609D194745181CcF2F1DBEf9271",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x124c04Ed0ED67609D194745181CcF2F1DBEf9271.png"
     }
   ]
 }
