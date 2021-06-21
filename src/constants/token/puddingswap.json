@@ -260,6 +260,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x68411e16a4F2054e0b3F7899E9e6a23faD5500E1.png"
+    },
+    {
+      "name": "Shoyi",
+      "symbol": "SYI",
+      "address": "0x24a8449B65a81A9Fb9FDE4d508D7018a9339C5b9",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x24a8449B65a81A9Fb9FDE4d508D7018a9339C5b9.png"
     }
   ]
 }
