@@ -268,6 +268,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x24a8449B65a81A9Fb9FDE4d508D7018a9339C5b9.png"
+    },
+    {
+      "name": "CLAIM",
+      "symbol": "CLAIM",
+      "address": "0x13154efe79d4d7f86407d56f8f6a1b07fb0b80ff",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x13154efe79d4d7f86407d56f8f6a1b07fb0b80ff.png"
     }
   ]
 }
