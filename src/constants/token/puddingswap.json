@@ -276,6 +276,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x13154efe79d4d7f86407d56f8f6a1b07fb0b80ff.png"
+    },
+    {
+      "name": "RooLend",
+      "symbol": "Roo",
+      "address": "0x01a2cb0cA7A03F1aC7Fc2FCe78552Ba248c2ad46",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x01a2cb0cA7A03F1aC7Fc2FCe78552Ba248c2ad46.png"
     }
   ]
 }
