@@ -279,7 +279,7 @@
     },
     {
       "name": "RooLend",
-      "symbol": "Roo",
+      "symbol": "ROO",
       "address": "0x01a2cb0cA7A03F1aC7Fc2FCe78552Ba248c2ad46",
       "chainId": 70,
       "decimals": 18,
