@@ -284,6 +284,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x01a2cb0cA7A03F1aC7Fc2FCe78552Ba248c2ad46.png"
+    },
+    {
+      "name": "HyperGraph",
+      "symbol": "HGT",
+      "address": "0x7dde5e7139a6e2096ace3c82680bf58ca1d7fee9",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x7dde5e7139a6e2096ace3c82680bf58ca1d7fee9.png"
     }
   ]
 }
