@@ -64,7 +64,7 @@ const AccountButton: React.FC<AccountButtonProps> = () => {
               </div>
               <div className="money">{getBalanceNumber(sushiBalance)}</div>
               <div className="title usdt">=${getBalanceNumber(sushiBalance) * pippiPrice}</div>
-              <Link href={`https://www.hscscan.com/address?address=${account}`}>
+              <Link href={`https://www.hooscan.com/address/address=${account}`}>
                 <TranslatedText translationId={250}>View on HscScan</TranslatedText>
               </Link>
             </Content>
