@@ -292,6 +292,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x7dde5e7139a6e2096ace3c82680bf58ca1d7fee9.png"
+    },
+    {
+      "name": "NFT-STK",
+      "symbol": "STK",
+      "address": "0x3E259bfe720093ABb26A2c3fE57670259B2ebeA2",
+      "chainId": 70,
+      "decimals": 12,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x3E259bfe720093ABb26A2c3fE57670259B2ebeA2.png"
     }
   ]
 }
