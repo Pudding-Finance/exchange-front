@@ -308,6 +308,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0xe7135426F31aa53b7A08d157f0138E03F48954D5.png"
+    },
+    {
+      "name": "FFN",
+      "symbol": "FFN",
+      "address": "0x74248c9caf0F5F203b0A32ccB4Ce5B5427125eE8",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x74248c9caf0F5F203b0A32ccB4Ce5B5427125eE8.png"
     }
   ]
 }
