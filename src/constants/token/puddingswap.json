@@ -324,6 +324,22 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x3f9b86987b96db944b34a6a2483d488369a41e3f.png"
+    },
+    {
+      "name": "AIB",
+      "symbol": "AIB",
+      "address": "0x2fFc487Ef3A76c5794A468DA11021c9058367f7A",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x2fFc487Ef3A76c5794A468DA11021c9058367f7A.png"
+    },
+    {
+      "name": "9CAT",
+      "symbol": "9CAT",
+      "address": "0x67dF38f569546e263fEe9aD3d97276D567988560",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x67dF38f569546e263fEe9aD3d97276D567988560.png"
     }
   ]
 }
