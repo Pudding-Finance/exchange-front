@@ -340,6 +340,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x67dF38f569546e263fEe9aD3d97276D567988560.png"
+    },
+    {
+      "name": "GENX",
+      "symbol": "GENX",
+      "address": "0xc48270d4672cc0111e9340c6d813e6cbb362b888",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0xc48270d4672cc0111e9340c6d813e6cbb362b888.png"
     }
   ]
 }
