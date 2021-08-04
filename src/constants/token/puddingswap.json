@@ -286,6 +286,14 @@
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x01a2cb0cA7A03F1aC7Fc2FCe78552Ba248c2ad46.png"
     },
     {
+      "name": "RooLend",
+      "symbol": "sROO",
+      "address": "0x7C0241847b59e7Fc2F40FD95c58cD4af4d491fcb",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x01a2cb0cA7A03F1aC7Fc2FCe78552Ba248c2ad46.png"
+    },
+    {
       "name": "HyperGraph",
       "symbol": "HGT",
       "address": "0x7dde5e7139a6e2096ace3c82680bf58ca1d7fee9",
