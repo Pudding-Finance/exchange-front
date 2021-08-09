@@ -7,7 +7,6 @@ import ReactGA from 'react-ga'
 import { Provider } from 'react-redux'
 import { ThemeProvider as StyledThemeProvider } from 'styled-components'
 import { NetworkContextName } from './constants'
-import './i18n'
 import App from './pages/App'
 import store from './state'
 // import { useIsDarkMode } from './state/user/hooks'
@@ -21,6 +20,7 @@ import { FixedGlobalStyle, ThemedGlobalStyle } from './components/Shared'
 import getLibrary from './utils/getLibrary'
 import RefreshProvider from './contexts/RefreshProvider'
 import PriceProvider from './contexts/PriceProvider'
+import { I18nProvider } from 'i18n/i18n-react'
 
 const Web3ProviderNetwork = createWeb3ReactRoot(NetworkContextName)
 
@@ -73,10 +73,12 @@ ReactDOM.render(
         <Provider store={store}>
           <Updaters />
           <RefreshProvider>
-            <PriceProvider >
+            <PriceProvider>
               <ThemeProvider>
-                <ThemedGlobalStyle />
-                <App />
+                <I18nProvider>
+                  <ThemedGlobalStyle />
+                  <App />
+                </I18nProvider>
               </ThemeProvider>
             </PriceProvider>
           </RefreshProvider>

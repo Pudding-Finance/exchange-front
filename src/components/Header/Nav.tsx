@@ -11,6 +11,9 @@ const Nav: React.FC = () => {
       <StyledAbsoluteLink href="https://puddingswap.finance/staking">
         <TranslatedText translationId={200}>Staking</TranslatedText>
       </StyledAbsoluteLink>
+      <StyledAbsoluteLink href="https://puddingswap.finance/pudvault">
+        <TranslatedText translationId="nav-pud-vault">LockVault</TranslatedText>
+      </StyledAbsoluteLink>
       <StyledAbsoluteLink href="https://puddingswap.finance/ePud">
         <TranslatedText translationId={218}>ePUD Pools</TranslatedText>
       </StyledAbsoluteLink>

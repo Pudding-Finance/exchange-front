@@ -17,7 +17,7 @@ const defaultDomain = '.puddingswap.finance'
 //   return hostname
 // }
 
-const setCookie = (name, value, days = 365, shouldUseSubDomain = false) => {
+const setCookie = (name: string, value: any, days = 365, shouldUseSubDomain = false) => {
   const date = new Date()
   let expires = ''
   if (days) {
@@ -29,7 +29,7 @@ const setCookie = (name, value, days = 365, shouldUseSubDomain = false) => {
   document.cookie = `${name}=${value}${expires}${domain}; path=/`
 }
 
-const getCookie = (name, { cookie = '' } = {}) => {
+const getCookie = (name: string, { cookie = '' } = {}) => {
   let cookieStr = ''
   if (typeof document === 'undefined') {
     cookieStr = cookie
@@ -51,7 +51,7 @@ const getCookie = (name, { cookie = '' } = {}) => {
   return null
 }
 
-const deleteCookie = name => {
+const deleteCookie = (name: string) => {
   setCookie(name, '', -1)
 }
 

@@ -13,7 +13,7 @@ const useTokenBalance = (tokenAddress: string) => {
   const { slowRefresh } = useRefresh()
   const web3 = getWeb3NoAccount()
   const fetchBalance = useCallback(async () => {
-    const balance = await getBalance(web3, tokenAddress, account)
+    const balance = await getBalance(web3, tokenAddress, account!)
     setBalance(new BigNumber(balance))
   }, [account, web3, tokenAddress])
 

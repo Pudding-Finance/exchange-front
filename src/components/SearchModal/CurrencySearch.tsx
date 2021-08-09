@@ -2,7 +2,6 @@ import { Currency, ETHER, Token } from '@pancakeswap-libs/sdk'
 import React, { KeyboardEvent, RefObject, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import ReactGA from 'react-ga'
 import { useSelector } from 'react-redux'
-import { useTranslation } from 'react-i18next'
 import { FixedSizeList } from 'react-window'
 import { Text } from 'rebass'
 import { ThemeContext } from 'styled-components'
@@ -25,7 +24,7 @@ import { useTokenComparator } from './sorting'
 import { PaddedColumn, SearchInput, Separator } from './styleds'
 import AutoSizer from 'react-virtualized-auto-sizer'
 import TranslatedText from '../TranslatedText'
-import { TranslateString } from '../../utils/translateTextHelpers'
+import { useI18n } from 'i18n/i18n-react'
 
 interface CurrencySearchProps {
   isOpen: boolean
@@ -46,7 +45,7 @@ export function CurrencySearch({
   isOpen,
   onChangeList
 }: CurrencySearchProps) {
-  const { t } = useTranslation()
+  const i18n = useI18n()
   const { chainId } = useActiveWeb3React()
   const theme = useContext(ThemeContext)
 
@@ -149,7 +148,6 @@ export function CurrencySearch({
 
   const selectedListInfo = useSelectedListInfo()
 
-
   return (
     <Column style={{ width: '100%', flex: '1 1' }}>
       <PaddedColumn gap="14px">
@@ -157,10 +155,7 @@ export function CurrencySearch({
           <Text fontWeight={500} fontSize={16}>
             <TranslatedText translationId={186}>Select a token</TranslatedText>
             <QuestionHelper
-              text={TranslateString(
-                214,
-                'Find a token by searching for its name or symbol or by pasting its address below.'
-              )}
+              text={i18n(214, 'Find a token by searching for its name or symbol or by pasting its address below.')}
             />
           </Text>
           <CloseIcon onClick={onDismiss} />
@@ -168,7 +163,7 @@ export function CurrencySearch({
         <SearchInput
           type="text"
           id="token-search-input"
-          placeholder={t('tokenSearchPlaceholder')}
+          placeholder=""
           value={searchQuery}
           ref={inputRef as RefObject<HTMLInputElement>}
           onChange={handleInput}

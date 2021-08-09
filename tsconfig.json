@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "target": "es5",
     "lib": [
       "dom",
@@ -34,7 +35,7 @@
     "cypress"
   ],
   "include": [
-    "./src/i18n.ts",
-    // "./src/**/*.tsx"
+    "src/index.tsx",
+    "src/react-app-env.d.ts",
   ]
 }

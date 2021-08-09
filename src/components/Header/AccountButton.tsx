@@ -5,7 +5,7 @@ import useHTPrice from '../../hooks/useHtPrice'
 import useTokenBalance from '../../hooks/useTokenBalance'
 import { getBalanceNumber } from '../../utils/formatBalance'
 import { getPipiAddress } from '../../utils/addressHelpers'
-import { TranslateString } from '../../utils/translateTextHelpers'
+import { useI18n } from 'i18n/i18n-react'
 import { useWalletModalToggle } from '../../state/application/hooks'
 import { useActiveWeb3React } from '../../hooks'
 import TranslatedText from '../TranslatedText'
@@ -13,12 +13,12 @@ import { shortenAddress } from '../../utils'
 import copyIcon from '../../assets/images/copy.png'
 
 export const CONNECTOR_STORAGE_ID = 'CONNECTOR_STORAGE_ID'
-interface AccountButtonProps {}
 
-const AccountButton: React.FC<AccountButtonProps> = () => {
+const AccountButton: React.FC<{}> = () => {
+  const i18n = useI18n()
   const { pippiPrice } = useHTPrice()
   const { account } = useActiveWeb3React()
-  const sushiBalance = useTokenBalance(getPipiAddress())
+  const sushiBalance = useTokenBalance(getPipiAddress() as any)
   const toggleWalletModal = useWalletModalToggle()
   const handleSignOutClick = useCallback(() => {
     window.localStorage.removeItem(CONNECTOR_STORAGE_ID)
@@ -27,7 +27,7 @@ const AccountButton: React.FC<AccountButtonProps> = () => {
   const copy = () => {
     const input = document.createElement('input')
     input.setAttribute('readonly', 'readonly')
-    input.setAttribute('value', account)
+    input.setAttribute('value', account || '')
     document.body.appendChild(input)
     input.setSelectionRange(0, 9999)
     if (document.execCommand('copy')) {
@@ -52,7 +52,7 @@ const AccountButton: React.FC<AccountButtonProps> = () => {
           </AccountInner>
           <Modal className="modal">
             <Content>
-              <div className="title">{TranslateString(758, 'your wallet')}</div>
+              <div className="title">{i18n(758, 'your wallet')}</div>
               <div className="subtitle">
                 <span>{shortenAddress(account)}</span>
                 <img src={copyIcon} alt="" onClick={copy} />

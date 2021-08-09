@@ -38,8 +38,8 @@ export const FixedGlobalStyle = createGlobalStyle`
 
 export const ThemedGlobalStyle = createGlobalStyle`
     html {
-      color: ${({ theme }) => theme.colors.text1};
-      background-color:${({ theme }) => theme.colors.bg0};
+      color: ${({ theme }) => (theme as any).colors.text1};
+      background-color:${({ theme }) => (theme as any).colors.bg0};
     }
 
     body {

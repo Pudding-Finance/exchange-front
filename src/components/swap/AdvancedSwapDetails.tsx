@@ -5,7 +5,7 @@ import { Field } from '../../state/swap/actions'
 import { useUserSlippageTolerance } from '../../state/user/hooks'
 import { TYPE } from '../Shared'
 import { computeSlippageAdjustedAmounts, computeTradePriceBreakdown } from '../../utils/prices'
-import { TranslateString } from '../../utils/translateTextHelpers'
+import { useI18n } from 'i18n/i18n-react'
 import { AutoColumn } from '../Column'
 import QuestionHelper from '../QuestionHelper'
 import { RowBetween, RowFixed } from '../Row'
@@ -14,6 +14,7 @@ import { SectionBreak } from './styleds'
 import SwapRoute from './SwapRoute'
 
 function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippage: number }) {
+  const i18n = useI18n()
   const theme = useContext(ThemeContext)
   const { priceImpactWithoutFee, realizedLPFee } = computeTradePriceBreakdown(trade)
   const isExactIn = trade.tradeType === TradeType.EXACT_INPUT
@@ -25,10 +26,10 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
         <RowBetween>
           <RowFixed>
             <TYPE.black fontSize={14} fontWeight={400} color={theme.colors.text2}>
-              {isExactIn ? TranslateString(828, 'Minimum received') : TranslateString(830, 'Maximum sold')}
+              {isExactIn ? i18n(828, 'Minimum received') : i18n(830, 'Maximum sold')}
             </TYPE.black>
             <QuestionHelper
-              text={TranslateString(
+              text={i18n(
                 832,
                 'Your transaction will revert if there is a large, unfavorable price movement before it is confirmed.'
               )}
@@ -47,13 +48,10 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
         <RowBetween>
           <RowFixed>
             <TYPE.black fontSize={14} fontWeight={400} color={theme.colors.text2}>
-              {TranslateString(836, 'Price Impact')}
+              {i18n(836, 'Price Impact')}
             </TYPE.black>
             <QuestionHelper
-              text={TranslateString(
-                834,
-                'The difference between the market price and estimated price due to trade size.'
-              )}
+              text={i18n(834, 'The difference between the market price and estimated price due to trade size.')}
             />
           </RowFixed>
           <FormattedPriceImpact priceImpact={priceImpactWithoutFee} />
@@ -62,10 +60,10 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
         <RowBetween>
           <RowFixed>
             <TYPE.black fontSize={14} fontWeight={400} color={theme.colors.text2}>
-              {TranslateString(838, 'Liquidity Provider Fee')}
+              {i18n(838, 'Liquidity Provider Fee')}
             </TYPE.black>
             <QuestionHelper
-              text={TranslateString(
+              text={i18n(
                 844,
                 'For each trade a %totalFee% fee is paid. %treasuryFee% goes to liquidity providers, %teamFee% goes to the %team% treasury and %buybackFee% goes to %token% buyback and burn.',
                 {
@@ -93,6 +91,7 @@ export interface AdvancedSwapDetailsProps {
 }
 
 export function AdvancedSwapDetails({ trade }: AdvancedSwapDetailsProps) {
+  const i18n = useI18n()
   const theme = useContext(ThemeContext)
 
   const [allowedSlippage] = useUserSlippageTolerance()
@@ -110,13 +109,10 @@ export function AdvancedSwapDetails({ trade }: AdvancedSwapDetailsProps) {
               <AutoColumn style={{ padding: '0 24px' }}>
                 <RowFixed>
                   <TYPE.black fontSize={14} fontWeight={400} color={theme.colors.text2}>
-                    {TranslateString(840, 'Route')}
+                    {i18n(840, 'Route')}
                   </TYPE.black>
                   <QuestionHelper
-                    text={TranslateString(
-                      842,
-                      'Routing through these tokens resulted in the best price for your trade.'
-                    )}
+                    text={i18n(842, 'Routing through these tokens resulted in the best price for your trade.')}
                   />
                 </RowFixed>
                 <SwapRoute trade={trade} />

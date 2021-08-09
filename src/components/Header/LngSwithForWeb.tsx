@@ -1,33 +1,33 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import { LanguageContext } from '../../hooks/LanguageContext'
-import { ZHCN, EN } from '../../constants/localisation/languageCodes'
+import { useLanguage } from 'i18n/i18n-react'
+import { ZH_CN, EN, Language } from 'i18n/languageCode'
 
 interface SwithProps {
   className?: string
 }
-const AccountLink: React.FC<SwithProps> = props => {
-  const { selectedLanguage, handleSetSelectedLanguage } = useContext(LanguageContext)
+const AccountLink: React.FC<SwithProps> = (props: SwithProps) => {
+  const [selectedLanguage, setSelectedLanguage] = useLanguage()
 
   return (
     <StyledButton className={props.className}>
-      <div className="text">{selectedLanguage?.language}</div>
+      <div className="text">{Language[selectedLanguage].language}</div>
       <Modal className="modal">
         <Button
-          className={selectedLanguage?.code === EN.code ? 'active' : 'unactive'}
+          className={selectedLanguage === EN.code ? 'active' : 'unactive'}
           onClick={() => {
-            handleSetSelectedLanguage(EN)
+            setSelectedLanguage(EN.code)
           }}
         >
           {EN.language}
         </Button>
         <Button
-          className={selectedLanguage?.code === ZHCN.code ? 'active' : 'unactive'}
+          className={selectedLanguage === ZH_CN.code ? 'active' : 'unactive'}
           onClick={() => {
-            handleSetSelectedLanguage(ZHCN)
+            setSelectedLanguage(ZH_CN.code)
           }}
         >
-          {ZHCN.language}
+          {ZH_CN.language}
         </Button>
       </Modal>
     </StyledButton>
@@ -44,7 +44,7 @@ const StyledButton = styled.div`
   align-items: center;
   .text {
     padding-left: 26px;
-    color: #2F3644;
+    color: #2f3644;
     font-weight: bolder;
     position: absolute;
     height: 60px;
@@ -68,7 +68,7 @@ const Button = styled.div`
   font-weight: bolder;
   color: ${props => props.theme.colors.primary};
   &.unactive {
-    color: #2F3644;
+    color: #2f3644;
   }
   &:hover {
     color: ${props => props.theme.colors.primary};

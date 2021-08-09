@@ -21,9 +21,10 @@ import { toV2LiquidityToken, useTrackedTokenPairs } from '../../state/user/hooks
 import AppBody from '../AppBody'
 import { Dots } from '../../components/swap/styleds'
 import TranslatedText from '../../components/TranslatedText'
-import { TranslateString } from '../../utils/translateTextHelpers'
+import { useI18n } from 'i18n/i18n-react'
 
 export default function Pool() {
+  const i18n = useI18n()
   const theme = useContext(ThemeContext)
   const { account } = useActiveWeb3React()
 
@@ -75,7 +76,7 @@ export default function Pool() {
                 <TranslatedText translationId={204}>Your Liquidity</TranslatedText>
               </Text>
               <Question
-                text={TranslateString(
+                text={i18n(
                   302,
                   'When you add liquidity, you are given pool tokens that represent your share. If you don’t see a pool you joined in this list, try importing a pool below.'
                 )}
@@ -85,7 +86,7 @@ export default function Pool() {
             {!account ? (
               <LightCard padding="40px">
                 <TYPE.body color={theme.colors.text3} textAlign="center">
-                  {TranslateString(768, 'Connect to a wallet to view your liquidity.')}
+                  {i18n(768, 'Connect to a wallet to view your liquidity.')}
                 </TYPE.body>
               </LightCard>
             ) : v2IsLoading ? (
@@ -110,9 +111,9 @@ export default function Pool() {
 
             <div>
               <Text textAlign="center" fontSize={14} style={{ padding: '.5rem 0 .5rem 0' }}>
-                {hasV1Liquidity ? 'Uniswap V1 liquidity found!' : TranslateString(304, "Don't see a pool you joined?")}{' '}
+                {hasV1Liquidity ? 'Uniswap V1 liquidity found!' : i18n(304, "Don't see a pool you joined?")}{' '}
                 <StyledInternalLink id="import-pool-link" to={hasV1Liquidity ? '/migrate/v1' : '/find'}>
-                  {hasV1Liquidity ? 'Migrate now.' : TranslateString(306, 'Import it.')}
+                  {hasV1Liquidity ? 'Migrate now.' : i18n(306, 'Import it.')}
                 </StyledInternalLink>
               </Text>
             </div>

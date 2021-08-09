@@ -42,6 +42,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onDismiss, visible }) => {
             </StyledAbsoluteLink>
           </Cn>
           <Cn>
+            <StyledAbsoluteLink href="https://puddingswap.finance/pudvault">
+              <TranslatedText translationId="nav-pud-vault">LockVault</TranslatedText>
+            </StyledAbsoluteLink>
+          </Cn>
+          <Cn>
             <StyledAbsoluteLink href="https://puddingswap.finance/ePUD">
               <TranslatedText translationId={218}>ePUD Pools</TranslatedText>
             </StyledAbsoluteLink>

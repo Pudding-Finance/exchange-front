@@ -13,7 +13,7 @@ import { ReactComponent as DropDown } from '../../assets/images/dropdown.svg'
 
 import { useActiveWeb3React } from '../../hooks'
 import TranslatedText from '../../components/TranslatedText'
-import { TranslateString } from '../../utils/translateTextHelpers'
+import { useI18n } from 'i18n/i18n-react'
 
 const InputRow = styled.div<{ selected: boolean }>`
   ${({ theme }) => theme.flexRowNoWrap}
@@ -137,7 +137,7 @@ export default function CurrencyInputPanel({
   onUserInput,
   onMax,
   showMaxButton,
-  label = TranslateString(298, 'Input'),
+  label = '',
   onCurrencySelect,
   currency,
   disableCurrencySelect = false,
@@ -148,6 +148,8 @@ export default function CurrencyInputPanel({
   id,
   showCommonBases
 }: CurrencyInputPanelProps) {
+  const i18n = useI18n()
+  label = label || i18n(298, 'Input')
   const [modalOpen, setModalOpen] = useState(false)
   const { account } = useActiveWeb3React()
   const selectedCurrencyBalance = useCurrencyBalance(account ?? undefined, currency ?? undefined)
@@ -175,7 +177,7 @@ export default function CurrencyInputPanel({
                   style={{ display: 'inline', cursor: 'pointer' }}
                 >
                   {!hideBalance && !!currency && selectedCurrencyBalance
-                    ? TranslateString(754, 'Balance:') + ' ' + selectedCurrencyBalance?.toSignificant(6)
+                    ? i18n(754, 'Balance:') + ' ' + selectedCurrencyBalance?.toSignificant(6)
                     : ' -'}
                 </TYPE.body>
               )}

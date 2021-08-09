@@ -1,31 +1,32 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import { LanguageContext } from '../../hooks/LanguageContext'
-import { ZHCN, EN } from '../../constants/localisation/languageCodes'
+import { useLanguage } from 'i18n/i18n-react'
+import { ZH_CN, EN } from 'i18n/languageCode'
 
 interface MobileMenuProps {
   className?: string
 }
-const AccountLink: React.FC<MobileMenuProps> = (props) => {
-  const { selectedLanguage, handleSetSelectedLanguage } = useContext(LanguageContext)
+const AccountLink: React.FC<MobileMenuProps> = () => {
+  const [language, setLanguage] = useLanguage()
+
   return (
     <StyledButton>
       <Button
-        className={(selectedLanguage && selectedLanguage.code === EN.code) || !selectedLanguage ? 'active' : 'unactive'}
+        className={language === EN.code ? 'active' : 'unactive'}
         onClick={() => {
-          handleSetSelectedLanguage(EN)
+          setLanguage(EN.code)
         }}
       >
         {EN.language}
       </Button>
       <span>/</span>
       <Button
-        className={selectedLanguage && selectedLanguage.code === ZHCN.code ? 'active' : 'unactive'}
+        className={language === ZH_CN.code ? 'active' : 'unactive'}
         onClick={() => {
-          handleSetSelectedLanguage(ZHCN)
+          setLanguage(ZH_CN.code)
         }}
       >
-        {ZHCN.language}
+        {ZH_CN.language}
       </Button>
     </StyledButton>
   )

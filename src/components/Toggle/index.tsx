@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { TranslateString } from '../../utils/translateTextHelpers'
+import { useI18n } from 'i18n/i18n-react'
 
 const ToggleElement = styled.span<{ isActive?: boolean; isOnSwitch?: boolean }>`
   padding: 0.25rem 0.5rem;
@@ -31,13 +31,15 @@ export interface ToggleProps {
 }
 
 export default function Toggle({ id, isActive, toggle }: ToggleProps) {
+  const i18n = useI18n()
+
   return (
     <StyledToggle id={id} isActive={isActive} onClick={toggle}>
       <ToggleElement isActive={isActive} isOnSwitch={true}>
-        {TranslateString(764, 'On')}
+        {i18n(764, 'On')}
       </ToggleElement>
       <ToggleElement isActive={!isActive} isOnSwitch={false}>
-        {TranslateString(766, 'Off')}
+        {i18n(766, 'Off')}
       </ToggleElement>
     </StyledToggle>
   )

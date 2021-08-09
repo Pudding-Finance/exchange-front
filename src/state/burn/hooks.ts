@@ -10,7 +10,7 @@ import { AppDispatch, AppState } from '../index'
 import { tryParseAmount } from '../swap/hooks'
 import { useTokenBalances } from '../wallet/hooks'
 import { Field, typeInput } from './actions'
-import { TranslateString } from '../../utils/translateTextHelpers'
+import { useI18n } from 'i18n/i18n-react'
 
 export function useBurnState(): AppState['burn'] {
   return useSelector<AppState, AppState['burn']>(state => state.burn)
@@ -29,6 +29,7 @@ export function useDerivedBurnInfo(
   }
   error?: string
 } {
+  const i18n = useI18n()
   const { account, chainId } = useActiveWeb3React()
 
   const { independentField, typedValue } = useBurnState()
@@ -124,7 +125,7 @@ export function useDerivedBurnInfo(
   }
 
   if (!parsedAmounts[Field.LIQUIDITY] || !parsedAmounts[Field.CURRENCY_A] || !parsedAmounts[Field.CURRENCY_B]) {
-    error = error ?? TranslateString(296, 'Enter an amount')
+    error = error ?? i18n(296, 'Enter an amount')
   }
 
   return { pair, parsedAmounts, error }

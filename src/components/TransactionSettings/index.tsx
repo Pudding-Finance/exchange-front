@@ -3,7 +3,7 @@ import styled, { ThemeContext } from 'styled-components'
 
 import QuestionHelper from '../QuestionHelper'
 import { TYPE } from '../../components/Shared'
-import { TranslateString } from '../../utils/translateTextHelpers'
+import { useI18n } from 'i18n/i18n-react'
 import { AutoColumn } from '../Column'
 import { RowBetween, RowFixed } from '../Row'
 
@@ -96,6 +96,7 @@ export interface SlippageTabsProps {
 }
 
 export default function SlippageTabs({ rawSlippage, setRawSlippage, deadline, setDeadline }: SlippageTabsProps) {
+  const i18n = useI18n()
   const theme = useContext(ThemeContext)
 
   const inputRef = useRef<HTMLInputElement>()
@@ -154,7 +155,7 @@ export default function SlippageTabs({ rawSlippage, setRawSlippage, deadline, se
           <TYPE.black fontWeight={400} fontSize={14} color={theme.colors.text2}>
             <TranslatedText translationId={282}>Slippage tolerance</TranslatedText>
           </TYPE.black>
-          <QuestionHelper text={TranslateString(762, "Your transaction will revert if the price changes unfavorably by more than this percentage.")} />
+          <QuestionHelper text={i18n(762, "Your transaction will revert if the price changes unfavorably by more than this percentage.")} />
         </RowFixed>
         <RowBetween>
           <Option
@@ -231,7 +232,7 @@ export default function SlippageTabs({ rawSlippage, setRawSlippage, deadline, se
           <TYPE.black fontSize={14} fontWeight={400} color={theme.colors.text2}>
             <TranslatedText translationId={284}>Transaction deadline</TranslatedText>
           </TYPE.black>
-          <QuestionHelper text={TranslateString(760, "Your transaction will revert if it is pending for more than this long.")}  />
+          <QuestionHelper text={i18n(760, "Your transaction will revert if it is pending for more than this long.")}  />
         </RowFixed>
         <RowFixed>
           <OptionCustom style={{ width: '80px' }} tabIndex={-1}>

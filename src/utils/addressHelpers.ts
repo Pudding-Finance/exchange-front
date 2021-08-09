@@ -22,9 +22,6 @@ export const getAddress = (obj: AddressProps) => {
   return obj[chainId] ? obj[chainId] : obj
 }
 
-export const getMasterChefAddress = () => {
-  return getAddress(contractAddresses.masterChef)
-}
 export const getMulticallAddress = () => {
   return multicall[chainId]
 }

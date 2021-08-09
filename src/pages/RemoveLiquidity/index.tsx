@@ -40,7 +40,7 @@ import { useDerivedBurnInfo, useBurnState } from '../../state/burn/hooks'
 import { Field } from '../../state/burn/actions'
 import { useWalletModalToggle } from '../../state/application/hooks'
 import { useUserDeadline, useUserSlippageTolerance } from '../../state/user/hooks'
-import { TranslateString } from '../../utils/translateTextHelpers'
+import { useI18n } from 'i18n/i18n-react'
 import { BigNumber } from '@ethersproject/bignumber'
 
 export default function RemoveLiquidity({
@@ -49,6 +49,7 @@ export default function RemoveLiquidity({
     params: { currencyIdA, currencyIdB }
   }
 }: RouteComponentProps<{ currencyIdA: string; currencyIdB: string }>) {
+  const i18n = useI18n()
   const [currencyA, currencyB] = [useCurrency(currencyIdA) ?? undefined, useCurrency(currencyIdB) ?? undefined]
   const { account, chainId, library } = useActiveWeb3React()
   const [tokenA, tokenB] = useMemo(() => [wrappedCurrency(currencyA, chainId), wrappedCurrency(currencyB, chainId)], [
@@ -641,7 +642,7 @@ export default function RemoveLiquidity({
             )}
             <div style={{ position: 'relative' }}>
               {!account ? (
-                <ButtonLight onClick={toggleWalletModal}>{TranslateString(204, 'Connect Wallet')}</ButtonLight>
+                <ButtonLight onClick={toggleWalletModal}>{i18n(204, 'Connect Wallet')}</ButtonLight>
               ) : (
                 <RowBetween>
                   <ButtonConfirmed

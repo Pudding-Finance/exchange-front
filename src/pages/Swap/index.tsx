@@ -45,9 +45,10 @@ import { computeTradePriceBreakdown, warningSeverity } from '../../utils/prices'
 import AppBody from '../AppBody'
 import { ClickableText } from '../Pool/styleds'
 import Loader from '../../components/Loader'
-import { TranslateString } from '../../utils/translateTextHelpers'
+import { useI18n } from 'i18n/i18n-react'
 
 export default function Swap() {
+  const i18n = useI18n()
   const loadedUrlParams = useDefaultsFromURLSearch()
 
   // token warning stuff
@@ -331,7 +332,7 @@ export default function Swap() {
               label={
                 independentField === Field.OUTPUT && !showWrap && trade
                   ? 'From (estimated)'
-                  : TranslateString(308, 'From')
+                  : i18n(308, 'From')
               }
               value={formattedAmounts[Field.INPUT]}
               showMaxButton={!atMaxAmountInput}
@@ -367,7 +368,7 @@ export default function Swap() {
               value={formattedAmounts[Field.OUTPUT]}
               onUserInput={handleTypeOutput}
               label={
-                independentField === Field.INPUT && !showWrap && trade ? 'To (estimated)' : TranslateString(310, 'To')
+                independentField === Field.INPUT && !showWrap && trade ? 'To (estimated)' : i18n(310, 'To')
               }
               showMaxButton={false}
               currency={currencies[Field.OUTPUT]}
@@ -421,7 +422,7 @@ export default function Swap() {
           </AutoColumn>
           <BottomGrouping>
             {!account ? (
-              <ButtonLight onClick={toggleWalletModal}>{TranslateString(204, 'Connect Wallet')}</ButtonLight>
+              <ButtonLight onClick={toggleWalletModal}>{i18n(204, 'Connect Wallet')}</ButtonLight>
             ) : showWrap ? (
               <ButtonPrimary disabled={Boolean(wrapInputError)} onClick={onWrap}>
                 {wrapInputError ??

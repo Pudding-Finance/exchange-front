@@ -1,6 +1,6 @@
 import React from 'react'
 import useCutDown from '../hooks/useCutDown'
-import { TranslateString } from '../utils/translateTextHelpers'
+import { useI18n } from 'i18n/i18n-react'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -49,6 +49,7 @@ const TimeItem = styled.div`
 
 export default function CountDown() {
   const { days, minutes, hours, seconds, remainTime } = useCutDown(new Date('2021-05-04T21:00:00+08:00'))
+  const i18n = useI18n()
 
   if (remainTime <= 0) {
     return null
@@ -56,7 +57,7 @@ export default function CountDown() {
 
   return (
     <Container>
-      <Title>{TranslateString(756, 'Farm CountDown')}</Title>
+      <Title>{i18n(756, 'Farm CountDown')}</Title>
       <TimeItem>
         <span>{days}</span>
         <span>{'D'}</span>

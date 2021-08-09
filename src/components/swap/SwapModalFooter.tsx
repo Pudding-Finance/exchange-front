@@ -11,7 +11,7 @@ import {
   formatExecutionPrice,
   warningSeverity
 } from '../../utils/prices'
-import { TranslateString } from '../../utils/translateTextHelpers'
+import { useI18n } from 'i18n/i18n-react'
 import { ButtonError } from '../Button'
 import { AutoColumn } from '../Column'
 import QuestionHelper from '../QuestionHelper'
@@ -32,6 +32,7 @@ export default function SwapModalFooter({
   swapErrorMessage: string | undefined
   disabledConfirm: boolean
 }) {
+  const i18n = useI18n()
   const [showInverted, setShowInverted] = useState<boolean>(false)
   const theme = useContext(ThemeContext)
   const slippageAdjustedAmounts = useMemo(() => computeSlippageAdjustedAmounts(trade, allowedSlippage), [
@@ -71,11 +72,11 @@ export default function SwapModalFooter({
           <RowFixed>
             <TYPE.black fontSize={14} fontWeight={400} color={theme.colors.text2}>
               {trade.tradeType === TradeType.EXACT_INPUT
-                ? TranslateString(828, 'Minimum received')
-                : TranslateString(830, 'Maximum sold')}
+                ? i18n(828, 'Minimum received')
+                : i18n(830, 'Maximum sold')}
             </TYPE.black>
             <QuestionHelper
-              text={TranslateString(
+              text={i18n(
                 832,
                 'Your transaction will revert if there is a large, unfavorable price movement before it is confirmed.'
               )}
@@ -97,10 +98,10 @@ export default function SwapModalFooter({
         <RowBetween>
           <RowFixed>
             <TYPE.black color={theme.colors.text2} fontSize={14} fontWeight={400}>
-              {TranslateString(836, 'Price Impact')}
+              {i18n(836, 'Price Impact')}
             </TYPE.black>
             <QuestionHelper
-              text={TranslateString(
+              text={i18n(
                 834,
                 'The difference between the market price and estimated price due to trade size.'
               )}
@@ -111,10 +112,10 @@ export default function SwapModalFooter({
         <RowBetween>
           <RowFixed>
             <TYPE.black fontSize={14} fontWeight={400} color={theme.colors.text2}>
-              {TranslateString(838, 'Liquidity Provider Fee')}
+              {i18n(838, 'Liquidity Provider Fee')}
             </TYPE.black>
             <QuestionHelper
-              text={TranslateString(
+              text={i18n(
                 844,
                 'For each trade a %totalFee% fee is paid. %treasuryFee% goes to liquidity providers, %teamFee% goes to the %team% treasury and %buybackFee% goes to %token% buyback and burn.',
                 {

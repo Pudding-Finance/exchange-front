@@ -18,7 +18,7 @@ import { SwapState } from './reducer'
 import useToggledVersion from '../../hooks/useToggledVersion'
 import { useUserSlippageTolerance } from '../user/hooks'
 import { computeSlippageAdjustedAmounts } from '../../utils/prices'
-import { TranslateString } from '../../utils/translateTextHelpers'
+import { useI18n } from 'i18n/i18n-react'
 
 export function useSwapState(): AppState['swap'] {
   return useSelector<AppState, AppState['swap']>(state => state.swap)
@@ -116,6 +116,7 @@ export function useDerivedSwapInfo(): {
   inputError?: string
   v1Trade: Trade | undefined
 } {
+  const i18n = useI18n()
   const { account } = useActiveWeb3React()
 
   const toggledVersion = useToggledVersion()
@@ -162,11 +163,11 @@ export function useDerivedSwapInfo(): {
 
   let inputError: string | undefined
   if (!account) {
-    inputError = TranslateString(204, 'Enter an amount')
+    inputError = i18n(204, 'Enter an amount')
   }
 
   if (!parsedAmount) {
-    inputError = inputError ?? TranslateString(296, 'Enter an amount')
+    inputError = inputError ?? i18n(296, 'Enter an amount')
   }
 
   if (!currencies[Field.INPUT] || !currencies[Field.OUTPUT]) {
@@ -215,7 +216,7 @@ export function useDerivedSwapInfo(): {
     parsedAmount,
     v2Trade: v2Trade ?? undefined,
     inputError,
-    v1Trade
+    v1Trade: undefined
   }
 }
 
