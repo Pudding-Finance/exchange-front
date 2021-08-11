@@ -356,6 +356,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0xc48270d4672cc0111e9340c6d813e6cbb362b888.png"
+    },
+    {
+      "name": "SGT",
+      "symbol": "SGT",
+      "address": "0xcad4de5b89c1992794181e944dcbe6f17402437d",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0xcad4de5b89c1992794181e944dcbe6f17402437d.png"
     }
   ]
 }
