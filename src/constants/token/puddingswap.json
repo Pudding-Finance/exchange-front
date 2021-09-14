@@ -380,6 +380,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x3cac9a2900227cd33d0f40b1b5b09187c85aef3e.png"
+    },
+    {
+      "name": "RLT",
+      "symbol": "RLT",
+      "address": "0x2a520797D0864DCA9DB40f55869673355b13AF33",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x2a520797D0864DCA9DB40f55869673355b13AF33.png"
     }
   ]
 }
