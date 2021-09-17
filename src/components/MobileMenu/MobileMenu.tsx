@@ -6,6 +6,8 @@ import TranslatedText from '../TranslatedText'
 import LngSwith from '../Header/LngSwith'
 import useHTPrice from '../../hooks/useHtPrice'
 import { useActiveWeb3React } from '../../hooks'
+import TopDecoration from './TopDecoration'
+import BottomDecoration from './BottomDecoration'
 
 interface MobileMenuProps {
   onDismiss: () => void
@@ -26,6 +28,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onDismiss, visible }) => {
         <StyledBackdrop onClick={onDismiss} />
         <StyledMobileMenu>
           <Bg></Bg>
+          <TopDecoration />
+          <BottomDecoration />
           <Cn>
             <StyledAbsoluteLink href="https://puddingswap.finance">
               <TranslatedText translationId={130}>Home</TranslatedText>
@@ -85,7 +89,7 @@ const Bottom = styled.div`
   left: 0;
   z-index: 1000;
   width: 80%;
-  bottom: 30px;
+  bottom: 120px;
   right: 0;
   margin: auto;
   text-align: center;

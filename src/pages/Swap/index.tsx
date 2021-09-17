@@ -46,6 +46,8 @@ import AppBody from '../AppBody'
 import { ClickableText } from '../Pool/styleds'
 import Loader from '../../components/Loader'
 import { useI18n } from 'i18n/i18n-react'
+import BottomDecoration from './BottomDecoration'
+import RightDecoration from './RightDecoration'
 
 export default function Swap() {
   const i18n = useI18n()
@@ -512,6 +514,8 @@ export default function Swap() {
             {betterTradeLinkVersion && <BetterTradeLink version={betterTradeLinkVersion} />}
           </BottomGrouping>
         </Wrapper>
+        <BottomDecoration />
+        <RightDecoration />
       </AppBody>
       <AdvancedSwapDetailsDropdown trade={trade} />
     </>
