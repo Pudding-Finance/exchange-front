@@ -331,11 +331,7 @@ export default function Swap() {
 
           <AutoColumn gap={'md'}>
             <CurrencyInputPanel
-              label={
-                independentField === Field.OUTPUT && !showWrap && trade
-                  ? 'From (estimated)'
-                  : i18n(308, 'From')
-              }
+              label={independentField === Field.OUTPUT && !showWrap && trade ? 'From (estimated)' : i18n(308, 'From')}
               value={formattedAmounts[Field.INPUT]}
               showMaxButton={!atMaxAmountInput}
               currency={currencies[Field.INPUT]}
@@ -369,9 +365,7 @@ export default function Swap() {
             <CurrencyInputPanel
               value={formattedAmounts[Field.OUTPUT]}
               onUserInput={handleTypeOutput}
-              label={
-                independentField === Field.INPUT && !showWrap && trade ? 'To (estimated)' : i18n(310, 'To')
-              }
+              label={independentField === Field.INPUT && !showWrap && trade ? 'To (estimated)' : i18n(310, 'To')}
               showMaxButton={false}
               currency={currencies[Field.OUTPUT]}
               onCurrencySelect={handleOutputSelect}
@@ -514,7 +508,7 @@ export default function Swap() {
             {betterTradeLinkVersion && <BetterTradeLink version={betterTradeLinkVersion} />}
           </BottomGrouping>
         </Wrapper>
-        <BottomDecoration />
+        {!trade && <BottomDecoration />}
         <RightDecoration />
       </AppBody>
       <AdvancedSwapDetailsDropdown trade={trade} />
