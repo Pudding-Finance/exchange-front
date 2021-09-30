@@ -388,6 +388,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x2a520797D0864DCA9DB40f55869673355b13AF33.png"
+    },
+    {
+      "name": "Punk World Token",
+      "symbol": "DP",
+      "address": "0x61B27ADebc9b7c7ffCF8bDFd2cec3339fd582e77",
+      "chainId": 70,
+      "decimals": 9,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x61B27ADebc9b7c7ffCF8bDFd2cec3339fd582e77.png"
     }
   ]
 }
