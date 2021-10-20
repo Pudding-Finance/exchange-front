@@ -404,6 +404,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x56B0C9B12E8480b4C865322CB3d5CEf1c22c1430.png"
+    },
+    {
+      "name": "LINK",
+      "symbol": "LINK",
+      "address": "0x294CDE734A863Dcf65417992424405bCcF3973E7",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x294CDE734A863Dcf65417992424405bCcF3973E7.png"
     }
   ]
 }
