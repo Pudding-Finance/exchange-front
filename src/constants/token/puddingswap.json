@@ -412,6 +412,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x294CDE734A863Dcf65417992424405bCcF3973E7.png"
+    },
+    {
+      "name": "F9",
+      "symbol": "F9",
+      "address": "0x3dFd430987bBED8dE7B173BE076FC876e789F2a6",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x3dFd430987bBED8dE7B173BE076FC876e789F2a6.png"
     }
   ]
 }
