@@ -420,6 +420,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x3dFd430987bBED8dE7B173BE076FC876e789F2a6.png"
+    },
+    {
+      "name": "Solana",
+      "symbol": "SOL",
+      "address": "0xbB680D2672b369d39FaC17487Be8dFc44DD42053",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0xbB680D2672b369d39FaC17487Be8dFc44DD42053.png"
     }
   ]
 }
