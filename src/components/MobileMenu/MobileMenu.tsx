@@ -56,6 +56,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onDismiss, visible }) => {
             </StyledAbsoluteLink>
           </Cn>
           <Cn>
+            <StyledAbsoluteLink href="https://puddingswap.finance/chefnft">NFT</StyledAbsoluteLink>
+          </Cn>
+          <Cn>
             <StyledLink className="active" to="/">
               <TranslatedText translationId={202}>Exchange</TranslatedText>
             </StyledLink>
