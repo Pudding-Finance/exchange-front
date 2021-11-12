@@ -428,6 +428,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0xbB680D2672b369d39FaC17487Be8dFc44DD42053.png"
+    },
+    {
+      "name": "Avalanche",
+      "symbol": "AVAX",
+      "address": "0x9DC3eA39736451386D43BcB20616fd6F32225671",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x9DC3eA39736451386D43BcB20616fd6F32225671.png"
     }
   ]
 }
