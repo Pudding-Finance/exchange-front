@@ -460,6 +460,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x07bCC2444cF4a3C750a534026DCD3bBc979eFd85.png"
+    },
+    {
+      "name": "SPELL",
+      "symbol": "SPELL",
+      "address": "0xc3C2B3a2BD04c0A36224EBa45bcE0D0719E6eABa",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0xc3C2B3a2BD04c0A36224EBa45bcE0D0719E6eABa.png"
     }
   ]
 }
