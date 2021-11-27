@@ -468,6 +468,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0xc3C2B3a2BD04c0A36224EBa45bcE0D0719E6eABa.png"
+    },
+    {
+      "name": "UNI",
+      "symbol": "UNI",
+      "address": "0x1FC14E78612edC54e36506C4A11a1A3bE4fE48aF",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x1FC14E78612edC54e36506C4A11a1A3bE4fE48aF.png"
     }
   ]
 }
