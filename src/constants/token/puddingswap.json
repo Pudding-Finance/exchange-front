@@ -476,6 +476,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x1FC14E78612edC54e36506C4A11a1A3bE4fE48aF.png"
+    },
+    {
+      "name": "GALA",
+      "symbol": "GALA",
+      "address": "0x2DA53728c13B56082c6B5dEE966bCbaD7E9934a1",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x2DA53728c13B56082c6B5dEE966bCbaD7E9934a1.png"
     }
   ]
 }
