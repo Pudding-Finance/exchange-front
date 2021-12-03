@@ -484,6 +484,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x2DA53728c13B56082c6B5dEE966bCbaD7E9934a1.png"
+    },
+    {
+      "name": "MBOX",
+      "symbol": "MBOX",
+      "address": "0x84A5a5d570b050f2509CCA299841AA61187Ab3DE",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x84A5a5d570b050f2509CCA299841AA61187Ab3DE.png"
     }
   ]
 }
