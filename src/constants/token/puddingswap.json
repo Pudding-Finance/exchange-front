@@ -192,10 +192,10 @@
     {
       "name": "MOF",
       "symbol": "MOF",
-      "address": "0x7e49b17552c2e41555c3C8CBF3bE742796019442",
+      "address": "0xb9445a228bcBC37344f19905d03e6F6a00f7E005",
       "chainId": 70,
       "decimals": 18,
-      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x7e49b17552c2e41555c3C8CBF3bE742796019442.png"
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0xb9445a228bcBC37344f19905d03e6F6a00f7E005.png"
     },
     {
       "name": "Hoomoon",
