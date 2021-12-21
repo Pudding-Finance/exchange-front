@@ -492,6 +492,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x84A5a5d570b050f2509CCA299841AA61187Ab3DE.png"
+    },
+    {
+      "name": "SUSHI",
+      "symbol": "SUSHI",
+      "address": "0x908eE480d51ec7021160D9b62Dd034cF841d7C88",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x908eE480d51ec7021160D9b62Dd034cF841d7C88.png"
     }
   ]
 }
