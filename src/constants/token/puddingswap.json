@@ -500,6 +500,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x908eE480d51ec7021160D9b62Dd034cF841d7C88.png"
+    },
+    {
+      "name": "AXS",
+      "symbol": "AXS",
+      "address": "0x8e2Bf417C7BB5C2a3a5C794901ea341eAbaf6d04",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x8e2Bf417C7BB5C2a3a5C794901ea341eAbaf6d04.png"
     }
   ]
 }
