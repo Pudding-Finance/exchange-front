@@ -508,6 +508,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x8e2Bf417C7BB5C2a3a5C794901ea341eAbaf6d04.png"
+    },
+    {
+      "name": "CRO",
+      "symbol": "CRO",
+      "address": "0x049eAC6cdbA6C148af63e2a6B853e2112Ec9d7c2",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x049eAC6cdbA6C148af63e2a6B853e2112Ec9d7c2.png"
     }
   ]
 }
