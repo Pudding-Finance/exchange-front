@@ -516,6 +516,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x049eAC6cdbA6C148af63e2a6B853e2112Ec9d7c2.png"
+    },
+    {
+      "name": "AAVE",
+      "symbol": "AAVE",
+      "address": "0xAb2d0Efe8e635134C473e504d29D654C4F5d8575",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0xAb2d0Efe8e635134C473e504d29D654C4F5d8575.png"
     }
   ]
 }
