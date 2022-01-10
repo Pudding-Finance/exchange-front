@@ -524,6 +524,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0xAb2d0Efe8e635134C473e504d29D654C4F5d8575.png"
+    },
+    {
+      "name": "UMA",
+      "symbol": "UMA",
+      "address": "0xE6Be4a675C8Eb43CE103AFebb3A83083F42a9D8f",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0xE6Be4a675C8Eb43CE103AFebb3A83083F42a9D8f.png"
     }
   ]
 }
