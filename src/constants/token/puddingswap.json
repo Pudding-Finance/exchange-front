@@ -532,6 +532,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0xE6Be4a675C8Eb43CE103AFebb3A83083F42a9D8f.png"
+    },
+    {
+      "name": "MATIC",
+      "symbol": "MATIC",
+      "address": "0xf55735dc70c28fF989fc83745985e9179063ba51",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0xf55735dc70c28fF989fc83745985e9179063ba51.png"
     }
   ]
 }
