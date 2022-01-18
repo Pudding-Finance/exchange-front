@@ -540,6 +540,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0xf55735dc70c28fF989fc83745985e9179063ba51.png"
+    },
+    {
+      "name": "CRV",
+      "symbol": "CRV",
+      "address": "0x4913A14D329bF185ccca871194e84e1b1E4fBbA8",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x4913A14D329bF185ccca871194e84e1b1E4fBbA8.png"
     }
   ]
 }
