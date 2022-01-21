@@ -548,6 +548,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x4913A14D329bF185ccca871194e84e1b1E4fBbA8.png"
+    },
+    {
+      "name": "AR",
+      "symbol": "AR",
+      "address": "0x01dBC2f778AD6aC57eD170021CaDa3F6dC8c2D89",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x01dBC2f778AD6aC57eD170021CaDa3F6dC8c2D89.png"
     }
   ]
 }
