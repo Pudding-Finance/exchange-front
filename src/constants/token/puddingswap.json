@@ -556,6 +556,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x01dBC2f778AD6aC57eD170021CaDa3F6dC8c2D89.png"
+    },
+    {
+      "name": "BAT",
+      "symbol": "BAT",
+      "address": "0x4E4EB9a288a874Cd07733222C5ea4e7e3f1011F4",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x4E4EB9a288a874Cd07733222C5ea4e7e3f1011F4.png"
     }
   ]
 }
