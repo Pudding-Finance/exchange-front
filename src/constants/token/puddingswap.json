@@ -326,14 +326,6 @@
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x74248c9caf0F5F203b0A32ccB4Ce5B5427125eE8.png"
     },
     {
-      "name": "SAME",
-      "symbol": "SAME",
-      "address": "0x3f9b86987b96db944b34a6a2483d488369a41e3f",
-      "chainId": 70,
-      "decimals": 18,
-      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x3f9b86987b96db944b34a6a2483d488369a41e3f.png"
-    },
-    {
       "name": "AIB",
       "symbol": "AIB",
       "address": "0x2fFc487Ef3A76c5794A468DA11021c9058367f7A",
