@@ -556,6 +556,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x4E4EB9a288a874Cd07733222C5ea4e7e3f1011F4.png"
+    },
+    {
+      "name": "SNX",
+      "symbol": "SNX",
+      "address": "0x49367D8812bB223819d078d4ed32995A5B14805c",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x49367D8812bB223819d078d4ed32995A5B14805c.png"
     }
   ]
 }
