@@ -564,6 +564,14 @@
       "chainId": 70,
       "decimals": 18,
       "logoURI": "https://exchange.puddingswap.finance/images/coins/0x49367D8812bB223819d078d4ed32995A5B14805c.png"
+    },
+    {
+      "name": "COMP",
+      "symbol": "COMP",
+      "address": "0x45b5a3fcF6a7AE0CDbDfa1c129B9B1B4E06b0412",
+      "chainId": 70,
+      "decimals": 18,
+      "logoURI": "https://exchange.puddingswap.finance/images/coins/0x45b5a3fcF6a7AE0CDbDfa1c129B9B1B4E06b0412.png"
     }
   ]
 }
